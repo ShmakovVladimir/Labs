@@ -1,0 +1,488 @@
+// Rmaa Dlg
+
+"Modi"
+"Ping"
+"Wiedergabe-/Aufnahmegeräte"
+"ASIO"
+"Tests und Optionen"
+"Auf Vorgabe zurücksetzen"
+"Alles aus-/abwählen"
+"Wiedergabe/Aufnahme anpassen"
+"Tests ausführen"
+"Erzeugen/Analysieren"
+"Info..."
+
+//****************** General ***************************************************
+"Allgemein"
+"Resultierende WAV-Datei speichern"
+"Analysiere Rauschen (Noise) und Verzerrungen (Distortions) nur im Bereich 20 Hz - 20 kHz"
+"Normalisiere die Amplitude des Testsignals vor der Analyse"
+"FFT-Größe"
+"Optimierung"
+
+"1/4x"
+"1/2x"
+"Geschwindigkeit"
+"Qualität"
+"Beste Qualität"
+
+"px"
+"w7"
+"t7"
+"v8"
+"p8"
+"s8"
+
+"dB scale mode: equivalent total RMS for white noise""
+
+//****************** Sound card ************************************************
+"Soundkarte"
+"Verwende WDM-Treiber (falls möglich)"
+"Mono-Modus"
+
+//****************** Signals ***************************************************
+"Signale"
+"Kalibrierungs- und Sync-Ton"
+
+//****************** Display ***************************************************
+"Anzeige"
+"Kleinere Spektrumfenster"
+"Zeige vollen Frequenzbereich (bis zu Fs/2)"
+"Zeichne nur Spitzen des Spektrums aufs Vergleichsdiagramm"
+"Invertiere Spektrum-Diagrammfarben"
+"Breite der Diagrammlinie"
+"Farbe Slot 1"
+"Farbe Slot 2"
+"Farbe Slot 3"
+"Farbe Slot 4"
+"Farbe Slot 5"
+"Farbe Slot 6"
+"Farbe Slot 7"
+"Farbe Slot 8"
+"Skin"
+"Sprache"
+
+//****************** Frequency response ****************************************
+"Frequenzverhalten (Mehrton)"
+"Niedrige Frequenz, Hz"
+"Hohe Frequenz, Hz"
+
+//****************** Noise level ***********************************************
+"Noise-Level"
+"Dithering-Signal"
+
+//****************** Dynamic range *********************************************
+"Dynamischer Bereich"
+"Amplitude, dB"
+"Frequenz, Hz"
+
+//****************** Total harmonic distortion (THD) ***************************
+"Vollharmonische Verzerrung (THD)"
+"Amplitude, dB"
+"Frequenz, Hz"
+
+//****************** Intermod distortion (IMD) + Noise *************************
+"Intermodale Verzerrung (IMD) + Rauschen (Noise)"
+"Niedrige Frequenz, Hz"
+"Hohe Frequenz, Hz"
+"Niedrige Amplitude, dB"
+"Hohe Amplitude, dB"
+
+//****************** Stereo crosstalk ******************************************
+"Stereo-Nebensignaleffekte (Crosstalk)"
+"Frequenz 1, Hz"
+"Frequenz 2, Hz"
+"Frequenz 3, Hz"
+
+//****************** IMD + NOISE (Swept frequency) *****************************
+"IMD + NOISE (Vertauschte Frequenz)"
+"Frequenz 1, Hz"
+"Frequenz 2, Hz"
+"Frequenz 3, Hz"
+
+//****************** Frequency response (swept sine) ***************************
+"Frequenzverhalten (Vertauschter Sinus)"
+"Gründlicher Frequenzverhaltenstest"
+"Subwoofer-Test"
+"THD im vertauschten Sinustest darstellen"
+
+//****************** Harmonic distortions **************************************
+"Vollharmonische Verzerrung (Satz von Tönen)"
+"THD wird zum Frequenzverhalten gezählt"
+"THD-Test Frequenzbereich Niedrig, Hz"
+"THD-Test Frequenzbereich Hoch, Hz"
+"Anzahl Töne"
+"Niedrigste Ampl., dBFS"
+"Amp. Grenzwert 1, dB"
+"Amp. Grenzwert 2, dB"
+"Distortion Berechnungsmodus"
+
+"THD+N"
+"2+3nd Oberwellen"
+"2nd Oberwelle"
+"3nd Oberwelle"
+
+//****************** Impulse/phase response *************************************
+"Impuls-/Phasenverhalten"
+
+
+
+// Tooltips
+"Wiedergabe/Aufnahme"
+"Nur Wiedergabe"
+"Nur Aufnahme"
+"WAV erzeugen"
+"WAV analysieren"
+"SAV/SAC/MDF öffnen"
+"Spektrum-Analysator"
+
+// Splash
+"Initialisiere..."
+"Lade Tests-Library (tests.dll)..."
+"Initialisiere Soundkarten-Interface..."
+"Lade Einstellungen aus Registry..."
+"Initialisiere Tests..."
+"Initialisiere Benutzeroberfläche..."
+"Initialisiere Soundkarte..."
+
+//StatCalDlg
+"Passe Levels an"
+"Aufgenommenes Level"
+"Links"
+"Rechts"
+"Inter-Channel-Leakage"
+"L <-- R"
+"L --> R"
+"Verzerrung (Clipping?)"
+"Links"
+"Rechts"
+"ÜBERBLICK"
+"Sollte  -1 dB sein"
+"(etwa)"
+"Test starten"
+"Abbrechen"
+"Latenz: %.0f ms (%d Samples)"
+
+"PROBLEM: Das Input-Level ist niedrig. Versuchen Sie, die Aufnahme- oder Wiedergabe-Levels in Ihrem Mixer zu erhöhen."
+"PROBLEM: Das Input-Level ist zu hoch. Versuchen Sie, die Aufnahme- oder Wiedergabe-Levels in Ihrem Mixer zu verringern."
+"PROBLEM: Starke Verzerrung (Distortion) im aufgenommenen Signal. Versuchen Sie, die Aufnahme- oder Wiedergabe-Levels in Ihrem Mixer zu verringern."
+"PROBLEM: Inter-Channel-Leakage im aufgenommenen Signal. Möglicher Grund: Verbindungskabel, vertauschte Kanäle."
+"Die Levels sind OK."
+"PROBLEM: Das Input-Level ist niedrig. Versuchen Sie, die Aufnahme- oder Wiedergabe-Levels in Ihrem Mixer zu erhöhen."
+"PROBLEM: Das Input-Level ist zu hoch. Versuchen Sie, die Aufnahme- oder Wiedergabe-Levels in Ihrem Mixer zu verringern."
+"Die Levels sind OK."
+
+"Spektrum des aufgenommenen Testsignals (das Testsignal ist ein Ton von 1 kHz bei -1 dB)"
+
+// ActivateDlg
+"Aktivieren"
+"Name"
+"E-Mail"
+"Aktivierungs-Code"
+"OK"
+"Abbrechen"
+
+// COpenedSAVFileDlg
+"Speichere Testergebnisse"
+"Soundkarte/Gerätename:"
+"Testbedingungen:"
+"Kommentare:"
+"OK"
+"Abbrechen"
+
+// CSavedSAVFileDlg
+"Speichere Testergebnisse"
+"Soundkarte/Gerätename:"
+"Testbedingungen:"
+"Kommentare:"
+"OK"
+"Abbrechen"
+
+// CCloseResultsDlg
+"Ergebnisse schließen?"
+"Sind Sie sicher, dass Sie die Ergebnisse schließen und so alle Ergebnisse verwerfen wollen?"
+"OK"
+"Abbrechen"
+
+// CHTMLOptionsDlg
+"HTML-Bericht Optionen"
+"HTML-Titel und Überschriften"
+"Soundkarte/Gerätename:"
+"Sampling-Modus:"
+"Testbedingungen:"
+"Kommentare:"
+"Berichtoptionen"
+"Berichtsprache:"
+"Berichtstil:"
+"OK"
+"Abbrechen"
+"Vergleich"
+
+// ResultsDlg
+"Test-Ergebnisse"
+"Gerät:"
+"Sampling-Modus:"
+"Frequenzverhalten (Mehrton), dB"
+"Noise-Level, dBA"
+"Dynamischer Bereich, dBA"
+"Vollharmonische Verzerrung (THD), %"
+"Intermodulation Distortion + Noise, %"
+"Stereo-Nebensignaleffekt, dB"
+"Intermodulation Distortion + Noise (Vertauschte Freqs), %"
+"Frequenzverhalten (Vertauschter Sinus), dB"
+"Vollharmonische Verzerrung (Vertauschte Freqs), äÁ"
+"Wählen"
+"Wählen"
+"Wählen"
+"Wählen"
+"Wählen"
+"Wählen"
+"Wählen"
+"Wählen"
+
+// AvailModesDlg
+
+"Unterstützte Soundkarten-Modi (STEREO)"
+"44.1 kHz"
+"48 kHz"
+"96 kHz"
+"192 kHz"
+"8 Bit"
+"16 Bit"
+"24 Bit (3-Byte gepackt)"
+"32 Bit (4-Byte PCM)"
+"32 Bit (IEEE-Float)"
+"    LEGENDE:
+D - Full-Duplex-Modus,
+P - Wiedergabe,
+R - Aufnahme,
+P,R - Wiedergabe und Aufnahme,
+N/A - Nicht-unterstützter Modus."
+"OK"
+
+// TestHiResDlg
+"Teste unterstützte Soundkarten-Modi"
+"Teste 192 kHz Modi (kann auf manchen Soundkarten instabil laufen)"
+"OK"
+"Abbrechen"
+
+// AsioPropertiesDlg
+"ASIO-Eigenschaften"
+"Input"
+"Output"
+"Kanal 1"
+"Kanal 2"
+"Kanal 1"
+"Kanal 2"
+"ASIO-Eigenschaften"
+
+// StatCalExtDlg
+"Passe Levels an"
+"Das Kalibrierungs-Signal wird jetzt abgespielt. Drücken Sie nach der Level-Anpassung auf 'Fertig'."
+"Fertig"
+
+// BlendDlg
+"Wie man Ergebnisse einfügt?"
+"Drücken Sie 'Hinzufügen', um neue Ergebnisse zu den alten hinzuzufügen,"
+"drücken Sie 'Leeren', um alle alten Ergebnisse zu entfernen und Neue einzufügen."
+"Hinzufügen"
+"Leeren"
+
+// SelectSlotDlg
+"Slot wählen"
+"Bitte wählen Sie den Ziel-Slot für Ergebnisse:"
+"Neuer Slot-Name:"
+"OK"
+"Abbrechen"
+
+// SelectSlotsDlg
+"Slots wählen"
+"Bitte wählen Sie verschiedene Quell-Slots zum Vergleich:"
+"OK"
+"Abbrechen"
+
+// SelectSlotSaveDlg
+"Slot wählen"
+"Bitte wählen Sie einen Slot:"
+"OK"
+"Abbrechen"
+
+// SpectrumAnalyzeOptionsDlg
+"Spektrum-Analyse Optionen"
+"FFT-Größe:"
+"Samples"
+"Auflösung:"
+"Hz"
+"Zero-Padding:"
+"FFT-Overlap:"
+"FFT-Fenster:"
+"Kaiser-Fenster Beta:"
+"(0 - 20)"
+"OK"
+"Abbrechen"
+
+// SpectrumOptionsDlg
+"Spektrumfenster Optionen"
+"Labels"
+"Zeige Soundkarten-/Gerätenamen"
+"Zeige Zusatzinfo"
+"Spektrum Diagramm"
+"Nur Spitzen des Spektrums zeichnen"
+"Diagramm Offset #"
+"um"
+"dB"
+"OK"
+
+// Progress strings
+"Lese WAV-Datei..."
+"Bereite Analyse der Ergebnisse vor..."
+"Erzeuge Testsignale..."
+"Schreibe WAV-Datei..."
+"Starte Wiedergabe/Aufnahme..."
+"Wiedergabe und Aufnahme..."
+"Spiele Kalibrierungssignal ab..."
+"Wiedergabe des Testsignals..."
+"Starte Aufnahme..."
+"Nehme auf..."
+"Passe Levels an..."
+"Bereite Einspeisen des Testsignals vor..."
+"Starte Aufnahme..."
+"Nehme auf...  Speise jetzt das Testsignal ein (Start vor 40%)"
+"Beende Wiedergabe/Aufnahme..."
+"Breche Tests ab..."
+"Analysiere aufgenommene Testdaten..."
+"Speichere Diagramm: Zeichne..."
+"Speichere Diagramm: Lese..."
+"Speichere Diagramm: Kodiere PNG-Datei..."
+"Speichere Diagramm: Zeichne..."
+"Speichere Diagramm: Kodiere PNG-Datei..."
+"Speichere Diagramm: Fertig"
+"Erzeuge HTML-Datei..."
+"Erzeuge HTML-Datei (Ergebnisübersicht)..."
+"Erzeuge HTML-Datei (Frequenzverhaltenstest)..."
+"Erzeuge HTML-Datei (Noise-Level-Test)..."
+"Erzeuge HTML-Datei (Test Dynamischer Bereich)..."
+"Erzeuge HTML-Datei (THD-Test)..."
+"Erzeuge HTML-Datei (IMD-Test)..."
+"Erzeuge HTML-Datei (Test Stereo-Nebensignaleffekt)..."
+"Erzeuge HTML-Datei (Vertauschter IMD-Test)..."
+"Erzeuge HTML-Datei..."
+"Erzeuge HTML-Datei (Ergebnisübersicht)..."
+"Erzeuge HTML-Datei (Frequenzverhaltenstest)..."
+"Erzeuge HTML-Datei (Noise-Level-Test)..."
+"Erzeuge HTML-Datei (Test Dynamischer Bereich)..."
+"Erzeuge HTML-Datei (THD-Test)..."
+"Erzeuge HTML-Datei (IMD-Test)..."
+"Erzeuge HTML-Datei (Test Stereo-Nebensignaleffekt)..."
+"Teste Soundkartenunterstützung des angegebenen Modus..."
+"Teste unterstützte Soundkarten-Modus..."
+"Spektrum-Analyse..."
+
+// System
+"Kann Datei nicht öffnen"
+"Kann Datei nicht lesen"
+"Ungültiges WAV-Format"
+"Nicht unterstütztes WAV-Format: keine PCM-Kodierung"
+"Nicht unterstütztes WAV-Format: keine STEREO- oder MONO-Datei"
+"Nicht unterstützte Sampling-Rate"
+"Nicht unterstütztes WAV-Format: keine 16-Bit- oder 32-Bit-Datei"
+"Kann Datei nicht erzeugen"
+"Kann WAV-Datei nicht schreiben!"
+"Zu wenig Arbeitsspeicher!"
+"Dateifehler!"
+"Fehler!"
+"Fehler in Analyse"
+"TESTS.DLL-Bibliothek enthält angegebenen Test nicht"
+"Waveform-Audio Gerätefehler"
+"Ihre Soundkarte unterstützt keine Aufnahme im angegebenen Modus. Es wird empfohlen,
+in die SOUNDKARTEN-EINSTELLUNGEN zurückzugehen und die Einstellungen zu ändern."
+"Womöglich unterstützt Ihre Soundkarte keine Full-Duplex-Operation im angegebenen Modus.
+Es wird empfohlen, in die SOUNDKARTEN-EINSTELLUNGEN zurückzugehen und diese zu ändern."
+"Kann das Testsignal nicht in der aufgenommenen Waveform entdecken.
+Womöglich ist das Input-Level zu niedrig. Versuchen Sie, die I/O-Levels zu prüfen."
+"Kein Hardware-Fehler aufgetreten."
+"Kann angegebenes Audiogerät nicht zur Wiedergabe öffnen"
+"Kann angegebenes Audiogerät nicht zur Aufnahme öffnen"
+"Kann Vorbereitung des Speicherpuffers nicht beenden"
+"Kann den Speicherpuffer nicht vorbereiten"
+"Kann den Speicherpuffer nicht abspielen"
+"Kann den Speicherpuffer nicht zur Aufnahme-Warteschlange hinzufügen"
+"Kann Aufnahme nicht starten"
+"Kann Aufnahme nicht anhalten"
+"Kann das Waveform-Gerät nicht schließen"
+"Kann aktuelle Aufnahmeposition nicht ausmachen"
+"Kann Wiedergabe nicht anhalten"
+"Kann das Sync-Signal an der aufgenommenen Waveform nicht finden.
+Versuchen Sie, die Wiedergabe-/Aufnahme-Levels anzupassen."
+"Warnung"
+"CLIPPING ist im aufgenommenen Testsignal vorgekommen.
+%1.3f%% der Samples wurden geclippt.
+Die Testergebnisse können inkorrekt sein.
+Es wird empfohlen, den Test nochmal mit niedrigeren Levels zu durchlaufen."
+"Die Input-Wave ist zu kurz.
+Nicht alle Tests wurden erfolgreich analysiert."
+"Die Test-Waveform wurde ordnungsgemäß aufgenommen."
+"Audiogerätefehler"
+"Kann Anti-Aliasing nicht durchführen.
+Versuchen Sie, das Bild zu verkleinern."
+"Fehler beim Schreiben der PNG-Datei!"
+"Kann PNG-Datei nicht schreiben"
+"Interner Fehler. Kann PNG-Datei nicht schreiben."
+"Die Datei Impulse.wav mit Impulsverhalten wurde erstellt.
+Siehe linker Kanal in der WAV-Datei."
+"Testergebnisse"
+"Ergebnisse wurden NICHT gespeichert."
+"Info"
+"Bitte klicken Sie auf eine der Ergebnis-Kästchen, um das Kontextmenü aufzurufen."
+"Keine Daten für diesen Test verfügbar."
+"Die Sampling-Raten des gewählten Ergebnisses sind inkompatibel."
+"Kann Ergebnisse nicht vergleichen"
+"Keine Ergebnisse geladen."
+"Wählen Sie bitte den Slot mit den Ergebnissen vor dem Laden der MDF-Datei.
+Die MDF-Daten werden in einer mit den gewählten Ergebnissen kompatible Form geladen."
+"Es gibt keinen Frequenzverhaltenstest im gewählten Slot."
+"MDF-Datei wurde nicht geladen."
+"Kann Datei nicht lesen oder die gespeicherte Datei ist ungültig."
+"Gespeicherte Datei ist korrupt"
+"Kann MDF-Datei nicht öffnen."
+"Kann Datei nicht lesen oder ungültige MDF-Datei."
+"Keine Daten zum Speichern."
+"Ergebnisse wurden nicht gespeichert."
+"Kann Datei nicht speichern."
+"Es gab Fehler während des Speicherns der Ergebnisse.
+Die gespeicherte Datei kann korrupt sein."
+"Keine Test-Daten verfügbar."
+"Kann in diese Version keinen Report für Akustik-Tests erstellen."
+"Kann HTML-Datei nicht erstellen."
+"Mindestens 2 Slots müssen geladen sein.
+Ein Slot wird korrigiert.
+Der Zweite wird zum Referenz-Slot."
+"Keine Frequenzverhaltensdaten zur Subtraktion vorhanden."
+"Die Sample-Raten passen nicht.
+Kann die Frequenzverhalten nicht voneinander abziehen."
+"Die Tests passen nicht (unterschiedliche Anzahl Kanäle?).
+Kann die Frequenzverhalten nicht voneinander abziehen."
+"Die Frequenzverhalten wurden erfolgreich voneinander abgezogen.
+Wenden Sie diese Operation nicht mehr als einmal an!"
+"Kann Bibliothek TESTS.DLL-Library nicht laden.
+Die Tests werden deaktiviert."
+"\nAUDIO-FEHLER: "
+"Bitte wählen Sie zuerst einige Tests."
+"Kann Tests nicht ausführen."
+"Kann Tests nicht abschließen."
+"Tests angehalten"
+"Kalibrierung und Tests angehalten"
+"Kann WAV-Datei nicht laden!"
+"Bitte wählen Sie einige Slots."
+"Bitte wählen Sie den Slot."
+
+// ping
+"Wiedergabe:     %s
+Aufnahme:    %s
+Play+Rec:     %s"
+"Soundkarte Ping-Ergebnisse"
+"FEHLGESCHLAGEN"
+"OK"
+
+
+

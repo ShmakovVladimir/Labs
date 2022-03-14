@@ -1,0 +1,488 @@
+// Rmaa Dlg
+
+"Modes"
+"Ping"
+"Playback/recording devices"
+"ASIO"
+"Tests and options"
+"Reset to default"
+"Check/uncheck all"
+"Adjust playback/recording"
+"Run tests"
+"Generate/Analyze"
+"About..."
+
+//****************** General ***************************************************
+"General"
+"Save resulting WAV file"
+"Analyze noise and distortions only in 20 Hz - 20 kHz range"
+"Normalize amplitude of test signals before analysis"
+"FFT Size"
+"Optimization"
+
+"1/4x"
+"1/2x"
+"Speed"
+"Quality"
+"Best quality"
+
+"px"
+"w7"
+"t7"
+"v8"
+"p8"
+"s8"
+
+"dB scale mode: equivalent total RMS for white noise"
+
+//****************** Sound card ************************************************
+"Sound card"
+"Use WDM drivers (if possible)"
+"Mono mode"
+
+//****************** Signals ***************************************************
+"Signals"
+"Calibration tone and sync tone"
+
+//****************** Display ***************************************************
+"Display"
+"Smaller spectrum windows"
+"Display full frequency range (up to Fs/2)"
+"Draw only tops of spectrum on comparison graphs"
+"Invert spectrum graph colors"
+"Graph line width"
+"Color slot 1"
+"Color slot 2"
+"Color slot 3"
+"Color slot 4"
+"Color slot 5"
+"Color slot 6"
+"Color slot 7"
+"Color slot 8"
+"Skin"
+"Language"
+
+//****************** Frequency response ****************************************
+"Frequency response (multitone)"
+"Low frequency, Hz"
+"High frequency, Hz"
+
+//****************** Noise level ***********************************************
+"Noise level"
+"Dithering signal"
+
+//****************** Dynamic range *********************************************
+"Dynamic range"
+"Amplitude, dB"
+"Frequency, Hz"
+
+//****************** Total harmonic distortion (THD) ***************************
+"Total harmonic distortion (THD)"
+"Amplitude, dB"
+"Frequency, Hz"
+
+//****************** Intermod distortion (IMD) + Noise *************************
+"Intermod distortion (IMD) + Noise"
+"Low frequency, Hz"
+"High frequency, Hz"
+"Low amplitude, dB"
+"High amplitude, dB"
+
+//****************** Stereo crosstalk ******************************************
+"Stereo crosstalk"
+"Frequency 1, Hz"
+"Frequency 2, Hz"
+"Frequency 3, Hz"
+
+//****************** IMD + NOISE (Swept frequency) *****************************
+"IMD + NOISE (Swept frequency)"
+"Frequency 1, Hz"
+"Frequency 2, Hz"
+"Frequency 3, Hz"
+
+//****************** Frequency response (swept sine) ***************************
+"Frequency response (swept sine)"
+"Thorough frequency response test"
+"Subwoofer test"
+"Plot THD in swept sine test"
+
+//****************** Harmonic distortions **************************************
+"Total harmonic distortion (set of tones)"
+"THD is rated to frequency response"
+"THD test frequency range Low, Hz"
+"THD test frequency range High, Hz"
+"Number of tones"
+"Lowest ampl, dBFS"
+"Amp. theshold 1, dB"
+"Amp. theshold 2, dB"
+"Distortion calculation mode"
+
+"THD+N"
+"2+3nd harmonics"
+"2nd harmonic"
+"3nd harmonic"
+
+//****************** Impulse/phase response *************************************
+"Impulse/Phase response"
+
+
+
+// Tooltips
+"Playback/Recording"
+"Playback only"
+"Recording only"
+"Generate WAV"
+"Analyze WAV"
+"Open SAV/SAC/MDF"
+"Spectrum Analyzer"
+
+// Splash
+"Initializing..."
+"Loading tests library (tests.dll)..."
+"Initializing sound card interface..."
+"Loading settings from registry..."
+"Initializing tests..."
+"Initializing user interface..."
+"Initializing sound card..."
+
+//StatCalDlg
+"Adjusting levels"
+"Recorded level"
+"Left"
+"Right"
+"Inter-channel leakage"
+"L <-- R"
+"L --> R"
+"Distortion (clipping?)"
+"Left"
+"Right"
+"SUMMARY"
+"Should be  -1 dB"
+"(approx.)"
+"Start test"
+"Cancel"
+"Latency: %.0f ms (%d samples)"
+
+"PROBLEM: The input level is low. Try to increase recording or playback levels in your mixer."
+"PROBLEM: The input level is too high. Try to decrease recording or playback levels in your mixer."
+"PROBLEM: High distortion in the recorded signal. Try to decrease recording or playback levels in your mixer."
+"PROBLEM: Inter-channel leakage in the recorded signal. Possible cause: connection cables, swapped channels."
+"The levels are OK."
+"PROBLEM: The input level is low. Try to increase recording or playback levels in your mixer."
+"PROBLEM: The input level is too high. Try to decrease recording or playback levels in your mixer."
+"The levels are OK."
+
+"Spectrum of recorded test signal (test signal is 1 kHz tone at -1 dB)"
+
+// ActivateDlg
+"Activate"
+"Name"
+"E-Mail"
+"Activation code"
+"Ok"
+"Cancel"
+
+// COpenedSAVFileDlg
+"Saving test results"
+"Soundcard/device name:"
+"Testing conditions:"
+"Comments:"
+"OK"
+"Cancel"
+
+// CSavedSAVFileDlg
+"Saving test results"
+"Soundcard/device name:"
+"Testing conditions:"
+"Comments:"
+"OK"
+"Cancel"
+
+// CCloseResultsDlg
+"Close results?"
+"Are you sure you want to close and discard all the results?"
+"OK"
+"Cancel"
+
+// CHTMLOptionsDlg
+"HTML report options"
+"HTML Titles and Headings"
+"Soundcard/device name:"
+"Sampling mode:"
+"Testing conditions:"
+"Comments:"
+"Report options"
+"Report language:"
+"Report style:"
+"OK"
+"Cancel"
+"Comparison"
+
+// ResultsDlg
+"Test results"
+"Device:"
+"Sampling mode:"
+"Frequency response (multitone), dB"
+"Noise level, dBA"
+"Dynamic range, dBA"
+"Total harmonic distortion (THD), %"
+"Intermodulation distortion + noise, %"
+"Stereo crosstalk, dB"
+"Intermodulation distortion + noise (swept freqs), %"
+"Frequency response (swept sine), dB"
+"Total harmonic distortion (swept freqs), Да"
+"Select"
+"Select"
+"Select"
+"Select"
+"Select"
+"Select"
+"Select"
+"Select"
+
+// AvailModesDlg
+
+"Supported soundcard modes (STEREO)"
+"44.1 kHz"
+"48 kHz"
+"96 kHz"
+"192 kHz"
+"8 bits"
+"16 bits"
+"24 bits (3-byte packed)"
+"32 bits (4-byte PCM)"
+"32 bits (IEEE float)"
+"    LEGEND:
+D - full duplex mode,
+P - playback,
+R - recording,
+P,R - playback and recording,
+N/A - not supported mode."
+"OK"
+
+// TestHiResDlg
+"Test supported sound card modes"
+"Test 192 kHz modes (can run unstable on some sound cards)"
+"Ok"
+"Cancel"
+
+// AsioPropertiesDlg
+"ASIO Properties"
+"Input"
+"Output"
+"Channel 1"
+"Channel 2"
+"Channel 1"
+"Channel 2"
+"ASIO Properties"
+
+// StatCalExtDlg
+"Adjusting levels"
+"The calibration signal is being played now. Press Done after you adjust levels."
+"Done"
+
+// BlendDlg
+"How to paste results?"
+"Press 'Add' to add new results to the old ones,"
+"press 'Clear' to erase all the old results and paste new results."
+"Add"
+"Clear"
+
+// SelectSlotDlg
+"Select slot"
+"Please select the destination slot for results:"
+"New slot name:"
+"OK"
+"Cancel"
+
+// SelectSlotsDlg
+"Select slots"
+"Please select several source slots for comparison:"
+"OK"
+"Cancel"
+
+// SelectSlotSaveDlg
+"Select slot"
+"Please select one slot:"
+"OK"
+"Cancel"
+
+// SpectrumAnalyzeOptionsDlg
+"Spectrum analysis options"
+"FFT size:"
+"samples"
+"Resolution:"
+"Hz"
+"Zero padding:"
+"FFT overlap:"
+"FFT window:"
+"Kaiser window beta:"
+"(0 - 20)"
+"OK"
+"Cancel"
+
+// SpectrumOptionsDlg
+"Spectrum window options"
+"Labels"
+"Display soundcard/device name"
+"Display additional info"
+"Spectrum graph"
+"Draw only tops of the spectrum"
+"Offset graph #"
+"by"
+"dB"
+"OK"
+
+// Progress strings
+"Reading WAV file..."
+"Preparing to analyze results..."
+"Generating test signals..."
+"Writing WAV file..."
+"Starting playback/recording..."
+"Playback and recording..."
+"Playing calibration signal..."
+"Playback of the test signal..."
+"Starting recording..."
+"Recording..."
+"Adjusting levels..."
+"Prepare to feed the test signal..."
+"Starting recording..."
+"Recording...  Feed the test signal now (start before 40%)"
+"Finishing playback/recording..."
+"Canceling tests..."
+"Analyzing recorded test data..."
+"Saving graph: Drawing..."
+"Saving graph: Reading..."
+"Saving graph: Encoding PNG file..."
+"Saving graph: Drawing..."
+"Saving graph: Encoding PNG format..."
+"Saving graph: Finished"
+"Generating HTML file..."
+"Generating HTML file (summary report)..."
+"Generating HTML file (frequency response test)..."
+"Generating HTML file (noise level test)..."
+"Generating HTML file (dynamic range test)..."
+"Generating HTML file (THD test)..."
+"Generating HTML file (IMD test)..."
+"Generating HTML file (stereo crosstalk test)..."
+"Generating HTML file (swept IMD test)..."
+"Generating HTML file..."
+"Generating HTML file (summary report)..."
+"Generating HTML file (frequency response test)..."
+"Generating HTML file (noise level test)..."
+"Generating HTML file (dynamic range test)..."
+"Generating HTML file (THD test)..."
+"Generating HTML file (IMD test)..."
+"Generating HTML file (stereo crosstalk test)..."
+"Testing sound card support of the specified mode..."
+"Testing supported sound card modes..."
+"Spectrum analysis..."
+
+// System
+"Cannot open the file"
+"Cannot read the file"
+"Invalid WAV format"
+"Unsupported WAV format: not a PCM coding"
+"Unsupported WAV format: not a STEREO or MONO file"
+"Unsupported sampling rate"
+"Unsupported WAV format: not a 16-bit or 32-bit file"
+"Cannot create the file"
+"Cannot write WAV file!"
+"Out of memory!"
+"File error!"
+"Error!"
+"Error in analysis"
+"TESTS.DLL library does not contain specified test"
+"Waveform audio device error"
+"Your sound card does not support recording at specified mode.
+It is recommended to return to SOUNDCARD SETTINGS dialog and change settings."
+"Probably your sound card does not support full-duplex operation at specified mode.
+It is recommended to return to SOUNDCARD SETTINGS dialog and change settings."
+"Cannot detect test signal in the recorded waveform.
+Probably the input level is too low. Try to check I/O levels."
+"No hardware error occured."
+"Cannot open specified audio device for playback"
+"Cannot open specified audio device for recording"
+"Cannot unprepare memory buffer"
+"Cannot prepare memory buffer"
+"Cannot play memory buffer"
+"Cannot add memory buffer to recording queue"
+"Cannot start recording"
+"Cannot stop recording"
+"Cannot close waveform device"
+"Cannot get the current recording position"
+"Cannot stop playback"
+"Cannot find sync signal at the recorded waveform.
+Try to adjust playback/recording levels."
+"Warning"
+"The CLIPPING has occurred in the recorded test signal.
+%1.3f%% of the samples are clipped.
+The test results can be inaccurate.
+It is recommended to run the test again with lower levels."
+"The input wave is too short.
+Not all of the tests were successfully analyzed."
+"Test waveform was not recorded properly."
+"Audio device error"
+"Can't perform anti-aliasing.
+Try to decrease image size."
+"Error writing PNG file!"
+"Cannot write PNG file"
+"Internal error. Cannot write PNG file."
+"Impulse.wav file with impulse response has been created.
+See left channel of the WAV file."
+"Test result"
+"Results were NOT stored."
+"Info"
+"Please click at one of the result-boxes to call the context menu."
+"No data for this test available."
+"Sampling rates of selected results are incompatible."
+"Cannot compare results"
+"No results loaded."
+"Before loading MDF file, please select the slot with the results.
+MDF data will be loaded in a form compatible with selected results."
+"There is no Frequency Response test in the selected slot."
+"MDF file not loaded."
+"Cannot read file or invalid save file."
+"Save file is corrupted"
+"Cannot open MDF file."
+"Cannot read file or invalid MDF file."
+"No data to save."
+"Results has not been saved."
+"Cannot write file."
+"There were errors during saving results.
+Saved file can be corrupted."
+"No test data available."
+"Cannot create a report for Acoustic Testings in this version."
+"Cannot create HTML file."
+"At least 2 slots must be loaded.
+One slot will be corrected.
+The second one will be the reference slot."
+"No frequency response data to subtract."
+"Sampling rates do not match.
+Cannot subtract frequency responses."
+"Tests do not match (different number of channels?).
+Cannot subtract frequency responses."
+"Frequency responses were subtracted successfully.
+Do not apply this operation more than once!"
+"Cannot load TESTS.DLL library.
+Tests will be disabled."
+"\nAUDIO ERROR: "
+"Please select some tests first."
+"Cannot run tests."
+"Cannot finish tests."
+"Tests canceled"
+"Calibration and tests canceled"
+"Cannot load WAV file!"
+"Please select some slots."
+"Please select the slot."
+
+// ping
+"Playback:     %s
+Recording:    %s
+Play+rec:     %s"
+"Sound card ping results"
+"FAILED"
+"OK"
+
+
+
