@@ -22,6 +22,8 @@ for i in range(5):
     plt.errorbar(x = t,
                  y = v,
                  color = colors[i])
+xT = [i*10 for i in range(0,75,5)]
+plt.xticks(xT)
 plt.grid()
 plt.show()
 
