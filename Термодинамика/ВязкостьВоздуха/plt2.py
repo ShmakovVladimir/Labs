@@ -1,4 +1,3 @@
-from pyexpat.errors import XML_ERROR_BINARY_ENTITY_REF
 import laba_functions as lf
 import matplotlib.pyplot as plt
 import math
@@ -16,12 +15,12 @@ def readData(path: str)->tuple:
         l.append(lf.value(float(line.split()[0]),0.02))
         p.append(lf.value(float(line.split()[1])*0.2*lf.const.g,0.2*lf.const.g))
     return d,q,t,l,p
-d,q,t,l,p = readData("data81.txt")
+d,q,t,l,p = readData("data83.txt")
 a,b = lf.MNK(l,p)
 xT = [i/100 for i in range(0,150,5)]
 xLine = [i/100 for i in range(0,150)]
 yLine = [a.value*i+b.value for i in xLine]
-yT = [i for i in range(40,175,5)]
+yT = [i for i in range(40,1500,10)]
 f = interp1d([i.value for i in l],[i.value for i in p],kind='quadratic')
 xInterpolated = [i/1000 for i in range(math.floor(l[0].value*1000),math.ceil(l[-1].value*1000))]
 yInterpolated = [f(x) for x in xInterpolated]
