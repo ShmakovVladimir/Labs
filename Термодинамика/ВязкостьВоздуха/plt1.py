@@ -23,7 +23,7 @@ def viscosityCount(QbyP: lf.value,d: lf.value,l: lf.value)->lf.value:
     visErrorPbyQ = abs(PbyQ.error*vis/PbyQ.value)
     visErrorL = abs(l.error*vis/l.value)
     return lf.value(vis,visErrord+visErrorPbyQ+visErrorL)
-l,d,p,q = readData('data2.txt')
+l,d,p,q = readData('data1.txt')
 a,b = lf.MNK([i.value for i in p],[i.value for i in q])
 etta = viscosityCount(a,d,l)
 a.print("a coefficient")
@@ -31,11 +31,11 @@ b.print("b coefficient")
 print()
 etta.print("air viscosity")
 print()
-xT = [i for i in range(90,235,5)]
+xT = [i for i in range(40,265,5)]
 yT = [i/100000 for i in range(60,111)]
 y = [a.value*x+b.value for x in xT]
 plt.plot(xT,y)
-plt.grid()
-plt.xticks(xT)
-plt.yticks(yT)
+#plt.grid()
+#plt.xticks(xT)
+#plt.yticks(yT)
 lf.plotValues(p,q)
