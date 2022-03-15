@@ -18,7 +18,7 @@ def readData(path: str)->tuple:
     return length,diam,pressure,Q
 def viscosityCount(QbyP: lf.value,d: lf.value,l: lf.value)->lf.value:
     PbyQ = lf.value(1/(QbyP.value),QbyP.error/(QbyP.value**2))
-    vis = lf.const.pi*(d.value**4)*PbyQ.value/(16*8*l.value)
+    vis = lf.const.pi*((d.value/2)**4)*PbyQ.value/(8*l.value)
     visErrord = abs((4*vis/d.value)*d.error)
     visErrorPbyQ = abs(PbyQ.error*vis/PbyQ.value)
     visErrorL = abs(l.error*vis/l.value)
@@ -26,13 +26,13 @@ def viscosityCount(QbyP: lf.value,d: lf.value,l: lf.value)->lf.value:
 l,d,p,q = readData('data2.txt')
 a,b = lf.MNK([i.value for i in p],[i.value for i in q])
 etta = viscosityCount(a,d,l)
-a.print("К.ф a")
-b.print("К.ф б")
+a.print("a coefficient")
+b.print("b coefficient")
 print()
-etta.print("Вязкость возудха")
+etta.print("air viscosity")
 print()
 xT = [i for i in range(90,235,5)]
-yT = [i/100000 for i in range(80,136)]
+yT = [i/100000 for i in range(60,111)]
 y = [a.value*x+b.value for x in xT]
 plt.plot(xT,y)
 plt.grid()
