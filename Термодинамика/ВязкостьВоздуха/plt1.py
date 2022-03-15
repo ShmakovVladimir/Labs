@@ -16,10 +16,20 @@ def readData(path: str)->tuple:
         Q.append(lf.value(q,0.01*q))
         pressure.append(lf.value(p,0.02*p))
     return length,diam,pressure,Q
+def viscosityCount(PbyQ: lf.value,d: lf.value,l: lf.value)->lf.value:
+    vis = lf.const.pi*(d.value**2)*PbyQ.value/(16*8*l.value)
+    visErrord = abs((4*vis/d.value)*d.error)
+    visErrorPbyQ = abs(PbyQ.error*vis/PbyQ.value)
+    visErrorL = abs(l.error*vis/l.value)
+    return lf.value(vis,visErrord+visErrorPbyQ+visErrorL)
 l,d,p,q = readData('data2.txt')
 a,b = lf.MNK([i.value for i in p],[i.value for i in q])
+etta = viscosityCount(a,d,l)
 a.print("К.ф a")
 b.print("К.ф б")
+print()
+etta.print("Вязкость возудха")
+print()
 xT = [i for i in range(90,235,5)]
 yT = [i/100000 for i in range(80,136)]
 y = [a.value*x+b.value for x in xT]
