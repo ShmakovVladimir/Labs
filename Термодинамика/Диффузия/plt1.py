@@ -2,8 +2,6 @@ import laba_functions as lf
 import matplotlib.pyplot as plt
 import math
 import csv 
-def cm_to_inch(value):
-    return value/2.54
 def readData(path :str):
     file = open(path)
     data = csv.DictReader(file)

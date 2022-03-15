@@ -8,25 +8,23 @@ class Constants:
         self.mmHg = 133.3223684 #миллиметр ртутного столба
         self.R = 8.31446261815324
         self.MH2O = 18/(10**3)
+        self.pi = 3.14
 class value:
     def __init__(self,value,error) -> None:
         self.value, self.error = value,error
     def __isub__(self,other)->None:
         self.value-=other.value
         self.error+=other.error
-    def print(self,name: str,num = -1):
+    def print(self,name: str,num = -1,r = ' '):
+        if r != ' ':
+            self.value = round(self.value,int(r))
+            self.error = round(self.error,int(r))
         if num == -1:
             print(name+': '+str(self.value)+' +/- '+str(self.error))
         else:
             print('Эксперимент: '+str(num)+' '+name+': '+str(self.value)+' +/- '+str(self.error))
     def relErorr(self):
         return self.error/self.value
-    def round(self):
-        error = str(self.error)
-        i = j = 0
-        while i<len(error) and error[i]!='.':   i+=1
-        while i+j<len(error) and error[i+j]!='0':   j+=1
-        return value(round(self.value,j+i),round(self.error,j+i))
 def MNK(x,y):
     fMemA = len(x)*sum([x[i]*y[i] for i in range(len(x))])
     sMemA = sum(x)*sum(y)
