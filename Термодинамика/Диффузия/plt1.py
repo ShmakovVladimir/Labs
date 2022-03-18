@@ -2,6 +2,7 @@ import laba_functions as lf
 import matplotlib.pyplot as plt
 import math
 import csv 
+from scipy.interpolate import interp1d
 def countD(voltage: list,time: list)->lf.value:
     logVoltage = [math.log(i) for i in voltage]
     deltaLogVoltage = [logVoltage[0]-logVoltage[i] for i in range(len(logVoltage))]
@@ -50,10 +51,15 @@ plt.xticks(xT)
 plt.grid()
 plt.show()
 plt.figure()
-plt.errorbar(Pressure,
-             [d.value for d in Diffusion],
-             [0 for i in Pressure],
-             [d.error for d in Diffusion])
+aLine,bLine = lf.MNK(Pressure,Diffusion)
+xLine = [i/1000 for i in range(math.floor(Pressure[-1]*1000),math.ceil(Pressure[0]*1000+100))]
+yLine = [aLine.value*x+bLine.value for x in xLine]
+plt.errorbar(x = Pressure,
+             y = [d.value for d in Diffusion],
+             xerr = [0 for _ in Pressure],
+             yerr = [d.error for d in Diffusion],
+             fmt = "_")
+plt.plot(xLine,yLine)
 plt.show()
 
 

@@ -8,26 +8,30 @@ class Constants:
         self.mmHg = 133.3223684 #миллиметр ртутного столба
         self.R = 8.31446261815324
         self.MH2O = 18/(10**3)
+        self.pi = 3.14
 class value:
     def __init__(self,value,error) -> None:
         self.value, self.error = value,error
     def __isub__(self,other)->None:
         self.value-=other.value
         self.error+=other.error
-    def print(self,name: str,num = -1):
+    def print(self,name: str,num = -1,r = ' '):
+        if r != ' ':
+            self.value = round(self.value,int(r))
+            self.error = round(self.error,int(r))
         if num == -1:
             print(name+': '+str(self.value)+' +/- '+str(self.error))
         else:
             print('Эксперимент: '+str(num)+' '+name+': '+str(self.value)+' +/- '+str(self.error))
     def relErorr(self):
         return self.error/self.value
-    def round(self):
-        error = str(self.error)
-        i = j = 0
-        while i<len(error) and error[i]!='.':   i+=1
-        while i+j<len(error) and error[i+j]!='0':   j+=1
-        return value(round(self.value,j+i),round(self.error,j+i))
-def MNK(x,y):
+def MNK(xValues: list,yValues: list):
+    x = xValues.copy()
+    y = yValues.copy()
+    if type(x[0]) == value:
+        x = [i.value for i in x]
+    if type(y[0]) == value:
+        y = [i.value for i in y]
     fMemA = len(x)*sum([x[i]*y[i] for i in range(len(x))])
     sMemA = sum(x)*sum(y)
     tMemA = len(x)*sum([x[i]**2 for i in range(len(x))])
@@ -50,11 +54,7 @@ def sigmaSl(x: list):
     sigmaSl = ((sum([(speedAverage-i.value)**2 for i in x]))**.5)/(len(x)-1)
     spAverage = value(speedAverage,sigmaSl)
     return spAverage
-def plotValues(x: list,y: list,grid = False,xTick = 20,yTick=20):
-    if grid:
-        plt.xticks([i for i in range(math.floor(min([i.value/xTick for i in x]))*xTick,math.floor(max([i.value for i in x]))*xTick)])
-        plt.yticks([i for i in range(math.floor(min([i.value/yTick for i in y]))*yTick,math.floor(max([i.value for i in y]))*yTick)])
-        plt.grid()
+def plotValues(x: list,y: list):
     plt.errorbar(x = [i.value for i in x],
                  y = [i.value for i in y],
                  xerr = [i.error for i in x],
