@@ -2,6 +2,18 @@ import laba_functions as lf
 import matplotlib.pyplot as plt
 import math
 import csv 
+def countD(voltage: list,time: list)->lf.value:
+    logVoltage = [math.log(i) for i in voltage]
+    deltaLogVoltage = [logVoltage[0]-logVoltage[i] for i in range(len(logVoltage))]
+    a,_ = lf.MNK(time,deltaLogVoltage)
+    a.print("A deltaLog")
+    V = lf.value(1200,30)
+    LbyS = lf.value(5.5,0.5)
+    DValue = a.value*V.value*LbyS.value/2
+    DerrLbyS = abs(LbyS.error*DValue/LbyS.value)
+    DerrV = abs(V.error*DValue/V.value)
+    DerrA = abs(a.error*DValue/a.value)
+    return lf.value(DValue/(100**2),math.sqrt(DerrA**2+DerrV**2+DerrLbyS**2)/(100**2))
 def readData(path :str):
     file = open(path)
     data = csv.DictReader(file)
@@ -14,16 +26,21 @@ def count(voltage: list,time: list)->tuple:
     voltage = [math.log(i) for i in voltage]
     return lf.MNK(time,voltage)
 colors = ['#ff9302','#ffb701','#5586a6','#3d5a68','#212b2d']
+Pressure = [1/(40*133.3+i*40*133.3) for i in range(5)]
+Diffusion = []
 for i in range(5):
     t,v = readData(str(i+1)+".csv")
     voltage,time = v,t
     v.pop(0)
     while t.pop(0)<5:   v.pop(0)
     a,b = count(voltage,time)
+    D = countD(voltage,time)
+    Diffusion.append(D)
     print()
-    print("Измерение: "+str(i+1))
-    a.print("Коэффициент a")
-    b.print("Коэффициент b")
+    print("Experiment: "+str(i+1))
+    D.print('Diffuzion coefficient')
+    a.print("coefficient a")
+    b.print("coefficient b")
     plt.yscale('log')
     plt.errorbar(x = t,
                  y = v,
@@ -31,6 +48,12 @@ for i in range(5):
 xT = [i*10 for i in range(0,75,5)]
 plt.xticks(xT)
 plt.grid()
+plt.show()
+plt.figure()
+plt.errorbar(Pressure,
+             [d.value for d in Diffusion],
+             [0 for i in Pressure],
+             [d.error for d in Diffusion])
 plt.show()
 
 
