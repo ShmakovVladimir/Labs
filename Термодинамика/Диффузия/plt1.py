@@ -1,4 +1,3 @@
-from cProfile import label
 import laba_functions as lf
 import matplotlib.pyplot as plt
 import math
