@@ -1,0 +1,10 @@
+\begin{table}[h]
+\centering
+\begin{tabular}{ l r }
+$D_{1} = 0.002 \pm 0.00015 \text(\frac{m^2}{c})$ & $\tau_{1} = 2 \cdot 10^{2} \pm 0.17 \text(c)$\\
+$D_{2} = 0.0008 \pm 7.3 \cdot 10^{-5} \text(\frac{m^2}{c})$ & $\tau_{2} = 4 \cdot 10^{2} \pm 0.5 \text(c)$\\
+$D_{3} = 0.0006 \pm 5.4 \cdot 10^{-5} \text(\frac{m^2}{c})$ & $\tau_{3} = 6 \cdot 10^{2} \pm 0.33 \text(c)$\\
+$D_{4} = 0.0004 \pm 4.2 \cdot 10^{-5} \text(\frac{m^2}{c})$ & $\tau_{4} = 7 \cdot 10^{2} \pm 0.36 \text(c)$\\
+$D_{5} = 0.0003 \pm 3.2 \cdot 10^{-5} \text(\frac{m^2}{c})$ & $\tau_{5} = 1 \cdot 10^{3} \pm 0.66 \text(c)$\\
+\end{tabular}
+\end{table}

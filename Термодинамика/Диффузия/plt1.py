@@ -37,6 +37,7 @@ def count(voltage: list,time: list)->tuple:
 colors = ['#ff9302','#ffb701','#5586a6','#3d5a68','#212b2d']
 Pressure = [1/(40*133.3+i*40*133.3) for i in range(5)]
 Diffusion = []
+pTime = []
 for i in range(5):
     t,v = readData(str(i+1)+".csv")
     voltage,time = v,t
@@ -44,6 +45,7 @@ for i in range(5):
     while t.pop(0)<5:   v.pop(0)
     a,b = count(voltage,time)
     D, processTime = countD(voltage,time)
+    pTime.append(processTime)
     Diffusion.append(D)
     length = countLength(D)
     print()
@@ -63,6 +65,7 @@ for i in range(5):
                  y = v,
                  color = colors[i],
                  label = 'Давление '+str(40+i*40)+ ' [торр]')
+lf.makeTable([Diffusion,pTime],["D",r'''\tau'''],[r'''\text(\frac{m^2}{c})''',r'''\text(c)'''])
 xT = [i*10 for i in range(0,75,5)]
 yT = [math.log(i/10000) for i in range(1,1000,10)]
 plt.xlabel("время [с]")
