@@ -1,3 +1,4 @@
+from re import L
 import laba_functions as lf
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
@@ -17,16 +18,22 @@ def readData(path: str)->tuple:
 
 
 time,pressure = readData('pressureByTimeData.txt')
-timeByPres = interp1d([i.value for i in time],[i.value for i in pressure],kind = 'cubic')
+logPressure = [lf.value(np.log(p.value),(p.error/p.value)) for p in pressure]
+presbyTimeInter = interp1d([i.value for i in time],[i.value for i in logPressure],kind='cubic')
 timeAxes = np.arange(start = 0,stop = time[-1].value,step = (10**-2))
-pressureInterpolated = [timeByPres(t) for t in timeAxes]
-plt.xlabel('Время [с]')
-plt.ylabel('Давление [Па]')
-plt.xticks(np.arange(0,100,1))
-plt.yticks(np.arange(0,0.2,0.005))
-plt.grid()
-plt.plot(timeAxes,pressureInterpolated)
-lf.plotValues(time,pressure)
-lf.makeTable([time,pressure],["t","P"],['c','Pa'])
-plt.show()
+pressureInterpolated = [presbyTimeInter(t) for t in timeAxes]
+aLog,bLog = lf.MNK(time[3:8:1],logPressure[3:8:1])
+a,b = lf.MNK(time,pressure)
+yLine = [aLog.value*x+bLog.value for x in timeAxes]
 
+aLog.print("Коэффициент a")
+#plt.yscale('log')
+plt.plot(timeAxes,pressureInterpolated)
+plt.plot(timeAxes,yLine,"--")
+plt.xlabel('Время [с]')
+plt.ylabel('Логарифм Давления [ln(Па)]')
+plt.xticks(np.arange(0,100,1))
+plt.yticks([np.log(i/100) for i in range(1,1000)])
+plt.grid()
+lf.plotValues(time,logPressure)
+plt.show()
