@@ -15,6 +15,9 @@ def readData(path: str)->tuple:
     for i in range(len(time)-1,-1,-1):
         time[i].value-=time[0].value
     return time,pressure
+def countPumpingSpeed(alpha: lf.value)->lf.value:
+    V = lf.value((1.21+2.19)/(10**0),(0.1)/(10**0))
+    return lf.value(-alpha.value*V.value,abs(alpha.error*V.value)+abs(alpha.value*V.error))
 
 
 time,pressure = readData('pressureByTimeData.txt')
@@ -23,11 +26,11 @@ presbyTimeInter = interp1d([i.value for i in time],[i.value for i in logPressure
 timeAxes = np.arange(start = 0,stop = time[-1].value,step = (10**-2))
 pressureInterpolated = [presbyTimeInter(t) for t in timeAxes]
 aLog,bLog = lf.MNK(time[3:8:1],logPressure[3:8:1])
-a,b = lf.MNK(time,pressure)
 yLine = [aLog.value*x+bLog.value for x in timeAxes]
-
+W = countPumpingSpeed(aLog)
 aLog.print("Коэффициент a")
-#plt.yscale('log')
+print()
+W.print("Скорость откачки")
 plt.plot(timeAxes,pressureInterpolated)
 plt.plot(timeAxes,yLine,"--")
 plt.xlabel('Время [с]')
