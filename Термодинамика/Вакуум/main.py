@@ -58,4 +58,4 @@ def exp2():
     lf.plotValues(time,pressure)
     lf.makeTable([time,pressure],["t","P"],['c','Pa'],'table2.txt')
     plt.show()
-exp2()
+
