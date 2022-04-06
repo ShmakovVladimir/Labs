@@ -46,6 +46,12 @@ for expNum in range(5):
     plt.plot(xLine,yLine,'--',label = (r'''Коэф наклона $\alpha = '''+str("{:.3g}".format(a.value))+".0"+' \pm '+str("{:.2g}".format(a.error))+'$'))
     ax.legend(loc = 'lower right')
     plt.show()
-lf.makeTable([xPlot,Temp,soundSpeed,gamma],
-              names=["exp","T","C_{s}",r'''\frac{C_{p}}{C_{v}}'''],
-                measures= ['','K',r'''\frac{m}{s}''',''])
+#lf.makeTable([xPlot,Temp,soundSpeed,gamma],
+#              names=["exp","T","C_{s}",r'''\frac{C_{p}}{C_{v}}'''],
+ #               measures= ['','K',r'''\frac{m}{s}''',''],
+  #              path = 'stable.txt') 
+plt.xlabel("Температура $K$")
+plt.ylabel(r'''Скорость звука $\frac{m}{s}$''')
+plt.grid()
+lf.plotValues(Temp,soundSpeed)
+plt.show()
