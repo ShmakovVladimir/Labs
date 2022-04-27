@@ -1,7 +1,7 @@
-from distutils.log import error
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.stats as stat
+import pandas as pd
 
 def readData(path: str,option = 'Metal')->tuple:
     data = open(path)
@@ -71,7 +71,25 @@ countActivationEnergy(metalT,metalViscosity,'ЭнергияАктивацииМ�
 metalMNK = stat.linregress(1/metalT,np.log(metalViscosity)) #метод наименьших квадратов для металлических шариков
 glassMNK = stat.linregress(1/glassT,np.log(glassViscosity)) #метод наименьших квадратов для стеклянных шариков
 
+#Создание таблиц
 
+metalData = {"Материал": r"Сталь $\ro = 7.8 g/cm^3$",
+             r"$1/T$": 1/metalT,
+             "$D$": metalD,
+             "Время падения": metalTime,
+             "$ln(\eta)$": np.log(metalViscosity)}
+metalDataFrame = pd.DataFrame(data = metalData)
+metalDataFrame.to_latex("metal.tex", index=False, caption="Металлические шарики",escape = False)
+glassData = {"Материал": r"Стекло $\ro = 2.5 g/cm^3$",
+             r"$1/T$": 1/glassT,
+             "$D$": glassD,
+             "Время падения": glassTime,
+             "$ln(\eta)$": np.log(glassViscosity)}
+glassDataFrame = pd.DataFrame(data = glassData)
+glassDataFrame.to_latex("glass.tex", index=False, caption="Стеклянные шарики",escape = False)
+
+
+#Построение графиков
 fig,ax = plt.subplots()
 ax.set_title(r"Зависимость $ln(\eta)$ от $\frac{1}{T}$")
 
@@ -88,9 +106,16 @@ plt.errorbar(1/glassT, #график для стеклянных шариков
              fmt="_",
              label = r"Стеклянные шарики")
 xAxes = np.linspace(0.0030,0.0035,1000)
+
 #Построение лучших прямых
-plt.plot(xAxes,glassMNK.slope*xAxes+glassMNK.intercept,':',label = r"МНК - стекло $a = "+str(int(round(glassMNK.slope/100,0)*100))+r"\pm"+str(int(round(glassMNK.stderr/100,0)*100))+"$")
-plt.plot(xAxes,metalMNK.slope*xAxes+metalMNK.intercept,":",label = r"МНК - металл $a = "+str(int(round(metalMNK.slope/100,0)*100))+r"\pm"+str(int(round(metalMNK.stderr/100,0)*100))+"$")
+plt.plot(xAxes,
+         glassMNK.slope*xAxes+glassMNK.intercept,
+         ':',
+         label = r"МНК - стекло $a = "+str(int(round(glassMNK.slope/100,0)*100))+r"\pm"+str(int(round(glassMNK.stderr/100,0)*100))+"$")
+plt.plot(xAxes,
+         metalMNK.slope*xAxes+metalMNK.intercept,
+         ":",
+         label = r"МНК - металл $a = "+str(int(round(metalMNK.slope/100,0)*100))+r"\pm"+str(int(round(metalMNK.stderr/100,0)*100))+"$")
 
 plt.xticks(np.arange(0.0030,0.0035,0.00005))
 plt.yticks(np.arange(0,-5,-0.5))
@@ -99,4 +124,3 @@ ax.set_ylabel("$ln(\eta)$")
 plt.grid()
 ax.legend(loc = 'lower right',prop = {'size': 15})
 plt.show()
-
