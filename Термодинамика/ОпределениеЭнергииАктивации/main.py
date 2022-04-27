@@ -35,8 +35,8 @@ def countViscosity(diam: np.array,time: np.array):
     g = 9.81
     glycerolDensity = 1260 #плотность глицерина
     ballDensity = [] #плотность шариков из стали и стекла
-    for i in time:
-        if i<1.5:
+    for i in diam:
+        if i<1.5*0.001:
             ballDensity.append(7.8*1000)
         else:
             ballDensity.append(2.5*1000)
@@ -57,7 +57,11 @@ def countActivationEnergy(temp: np.array,viscosity: np.array,filePath: str):
     with open(filePath,'w') as f:
         f.write("Activation Energy: "+"$"+str(W)+r"\pm"+str(Werr)+"$")
     
-
+def countRE(speed: np.array,radius: np.array,viscosity: np.array)->tuple:
+    glycerolDensity = 1260 #плотность глицерина
+    ReValue =  speed*radius*glycerolDensity/viscosity
+    ReError = ReValue*0.04
+    return ReValue,ReError
 
 
 metalT,metalD,time1,metalTime = readData('data.txt')
@@ -71,22 +75,33 @@ countActivationEnergy(metalT,metalViscosity,'ЭнергияАктивацииМ�
 metalMNK = stat.linregress(1/metalT,np.log(metalViscosity)) #метод наименьших квадратов для металлических шариков
 glassMNK = stat.linregress(1/glassT,np.log(glassViscosity)) #метод наименьших квадратов для стеклянных шариков
 
+ReMetalValue,ReMetalError = countRE(10/metalTime,metalD/2,metalViscosity)
+ReGlassValue,ReGlassError = countRE(10/glassTime,glassD/2,glassViscosity)
 #Создание таблиц
 
 metalData = {"Материал": r"Сталь $\ro = 7.8 g/cm^3$",
-             r"$1/T$": 1/metalT,
-             "$D$": metalD,
-             "Время падения": metalTime,
+             r"$1/T$ $[K^{-1}]$": 1/metalT,
+             "$D$[м]": metalD,
+             "Время падения[с]": metalTime,
              "$ln(\eta)$": np.log(metalViscosity)}
 metalDataFrame = pd.DataFrame(data = metalData)
 metalDataFrame.to_latex("metal.tex", index=False, caption="Металлические шарики",escape = False)
 glassData = {"Материал": r"Стекло $\ro = 2.5 g/cm^3$",
-             r"$1/T$": 1/glassT,
-             "$D$": glassD,
-             "Время падения": glassTime,
+             r"$1/T$ $[K^{-1}]$": 1/glassT,
+             "$D$[м]": glassD,
+             "Время падения[с]": glassTime,
              "$ln(\eta)$": np.log(glassViscosity)}
 glassDataFrame = pd.DataFrame(data = glassData)
 glassDataFrame.to_latex("glass.tex", index=False, caption="Стеклянные шарики",escape = False)
+reinolds = {"Тепмература [K]": metalT,
+                 "Число Рейнольдса": ReMetalValue,
+                 "Погрешность": ReMetalError,
+                 '  ': ['        ' for _ in ReMetalError],
+                 "Тепмература [K]": glassT,
+                 "Число Рейнольдса": ReGlassValue,
+                 "Погрешность": ReGlassError}
+reinoldsDataFrame = pd.DataFrame(data = reinolds)
+reinoldsDataFrame.to_latex("reinolds.tex", index=False, caption="Число Рейнольдса",escape = False)
 
 
 #Построение графиков
