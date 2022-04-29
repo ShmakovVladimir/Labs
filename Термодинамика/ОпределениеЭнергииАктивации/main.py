@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scipy.stats as stat
 import pandas as pd
-
+from pandas.plotting import table
 def readData(path: str,option = 'Metal')->tuple:
     data = open(path)
     line = data.readline()
@@ -62,6 +62,13 @@ def countRE(speed: np.array,radius: np.array,viscosity: np.array)->tuple:
     ReValue =  speed*radius*glycerolDensity/viscosity
     ReError = ReValue*0.04
     return ReValue,ReError
+def countRelaxationTime(diametr: np.array,viscosity: np.array,viscosityError: np.array,density: float):
+    radiusError = 0.1*0.001/2 #пограшность измерения радиуса
+    radius = diametr/2
+    time = 2*(np.power(radius,2))*density/(9*viscosity)
+    timeError = np.abs(2*time*radiusError/radius)+np.abs(time*viscosityError/viscosity)
+    return time,timeError
+
 
 
 metalT,metalD,time1,metalTime = readData('data.txt')
@@ -77,33 +84,46 @@ glassMNK = stat.linregress(1/glassT,np.log(glassViscosity)) #метод наим
 
 ReMetalValue,ReMetalError = countRE(10/metalTime,metalD/2,metalViscosity)
 ReGlassValue,ReGlassError = countRE(10/glassTime,glassD/2,glassViscosity)
-#Создание таблиц
 
-metalData = {"Материал": r"Сталь $\ro = 7.8 g/cm^3$",
+RelTimeMetalValue,RelTimeMetalError = countRelaxationTime(metalD,metalViscosity,metalViscosityError,7.8*1000)
+RelTimeGlassValue,RelTimeGlassError = countRelaxationTime(glassD,glassViscosity,glassViscosityError,2.5*1000)
+#Создание таблиц
+metalData = {"Материал": r"Сталь $den = 7.8 g/cm^3$",
              r"$1/T$ $[K^{-1}]$": 1/metalT,
              "$D$[м]": metalD,
              "Время падения[с]": metalTime,
              "$ln(\eta)$": np.log(metalViscosity)}
 metalDataFrame = pd.DataFrame(data = metalData)
-metalDataFrame.to_latex("metal.tex", index=False, caption="Металлические шарики",escape = False)
-glassData = {"Материал": r"Стекло $\ro = 2.5 g/cm^3$",
+glassData = {"Материал": r"Стекло $den = 2.5 g/cm^3$",
              r"$1/T$ $[K^{-1}]$": 1/glassT,
              "$D$[м]": glassD,
              "Время падения[с]": glassTime,
              "$ln(\eta)$": np.log(glassViscosity)}
 glassDataFrame = pd.DataFrame(data = glassData)
-glassDataFrame.to_latex("glass.tex", index=False, caption="Стеклянные шарики",escape = False)
-reinolds = {"Тепмература [K]": metalT,
-                 "Число Рейнольдса": ReMetalValue,
-                 "Погрешность": ReMetalError,
-                 '  ': ['        ' for _ in ReMetalError],
-                 "Тепмература [K]": glassT,
-                 "Число Рейнольдса": ReGlassValue,
-                 "Погрешность": ReGlassError}
+reinolds = {"Тепмература [K]": list(metalT)+list(glassT),
+                 "Число Рейнольдса": list(ReMetalValue)+list(ReGlassValue),
+                 "Погрешность измерения": list(ReMetalError)+list(ReGlassError),
+                 "Время релаксации [c]": list(RelTimeMetalValue)+list(RelTimeGlassValue),
+                 "Погрешность измерения времени[c]": list(RelTimeMetalError)+list(RelTimeGlassError)}
 reinoldsDataFrame = pd.DataFrame(data = reinolds)
-reinoldsDataFrame.to_latex("reinolds.tex", index=False, caption="Число Рейнольдса",escape = False)
+viscMetGl = {"Вязкость [Па$\cdot$c]": list(metalViscosity)+list(glassViscosity),
+             "Погрешность [Па$\cdot$c]":list(metalViscosityError)+list(glassViscosityError),
+             "Температура [K]": list(metalT)+list(glassT)}
+viscosityDF = pd.DataFrame(data=viscMetGl)
 
+#Сохранение таблиц
+ax = plt.subplot(111,frame_on = False) # no visible frame
+ax.xaxis.set_visible(False)  
+ax.yaxis.set_visible(False)  
 
+# table(ax, viscosityDF,loc = 'center')  
+# plt.savefig('viscosity.png')
+# table(ax, metalDataFrame,loc = 'center')  
+# plt.savefig('metalBalls.png')
+# table(ax,glassDataFrame,loc = 'center')
+# plt.savefig('glassBalls.png')
+# table(ax,reinoldsDataFrame,loc = 'center')
+# plt.savefig('reinolds.png')
 #Построение графиков
 fig,ax = plt.subplots()
 ax.set_title(r"Зависимость $ln(\eta)$ от $\frac{1}{T}$")
