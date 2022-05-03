@@ -88,14 +88,14 @@ ReGlassValue,ReGlassError = countRE(10/glassTime,glassD/2,glassViscosity)
 RelTimeMetalValue,RelTimeMetalError = countRelaxationTime(metalD,metalViscosity,metalViscosityError,7.8*1000)
 RelTimeGlassValue,RelTimeGlassError = countRelaxationTime(glassD,glassViscosity,glassViscosityError,2.5*1000)
 #Создание таблиц
-metalData = {"Материал": r"Сталь $den = 7.8 g/cm^3$",
-             r"$1/T$ $[K^{-1}]$": 1/metalT,
+
+metalData = { r"$1/T$ $[K^{-1}]$": 1/metalT,
              "$D$[м]": metalD,
              "Время падения[с]": metalTime,
              "$ln(\eta)$": np.log(metalViscosity)}
 metalDataFrame = pd.DataFrame(data = metalData)
-glassData = {"Материал": r"Стекло $den = 2.5 g/cm^3$",
-             r"$1/T$ $[K^{-1}]$": 1/glassT,
+
+glassData = { r"$1/T$ $[K^{-1}]$": 1/glassT,
              "$D$[м]": glassD,
              "Время падения[с]": glassTime,
              "$ln(\eta)$": np.log(glassViscosity)}
@@ -112,9 +112,9 @@ viscMetGl = {"Вязкость [Па$\cdot$c]": list(metalViscosity)+list(glassV
 viscosityDF = pd.DataFrame(data=viscMetGl)
 
 #Сохранение таблиц
-ax = plt.subplot(111,frame_on = False) # no visible frame
-ax.xaxis.set_visible(False)  
-ax.yaxis.set_visible(False)  
+# ax = plt.subplot(111,frame_on = False) # no visible frame
+# ax.xaxis.set_visible(False)  
+# ax.yaxis.set_visible(False)  
 
 # table(ax, viscosityDF,loc = 'center')  
 # plt.savefig('viscosity.png')
@@ -124,6 +124,11 @@ ax.yaxis.set_visible(False)
 # plt.savefig('glassBalls.png')
 # table(ax,reinoldsDataFrame,loc = 'center')
 # plt.savefig('reinolds.png')
+
+with open('tables/reinoldsData.txt','w',encoding="utf8") as f:
+    f.write(reinoldsDataFrame.to_markdown())
+print(metalDataFrame.to_markdown())
+
 #Построение графиков
 fig,ax = plt.subplots()
 ax.set_title(r"Зависимость $ln(\eta)$ от $\frac{1}{T}$")
