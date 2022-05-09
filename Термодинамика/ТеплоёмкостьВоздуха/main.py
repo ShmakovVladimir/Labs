@@ -31,16 +31,23 @@ def countHeatCapasity(data: dict):
     MNK = linregress(power,deltaTemp*massPerSecond)
     xLine = np.linspace(power[0],power[-1],1000)
     yLine = MNK.slope*xLine+MNK.intercept
-    print(MNK.slope)
 
-    HeatCapasity = MNK.slope*32*(10**3)
+    xIntersecton = -MNK.intercept/MNK.slope
+    
+
+    HeatCapasity = MNK.slope*28.97*(10**3)
+    print(MNK.stderr*28.97*(10**3))
     print(HeatCapasity)
 
     fig,ax = plt.subplots()
-    plt.plot(xLine,yLine,':',label = r'МНК $\alpha = ' + str(MNK.slope)+'\pm'+str(MNK.stderr)+'$')
-    plt.errorbar(power,deltaTemp*massPerSecond,fmt='o')
-    plt.xticks(np.linspace(xLine[0],xLine[-1],len(power)*5))
+    ax.set_title(r"Зависимость $m \Delta T$"+" от "+r"$I V$")
+    plt.plot(xLine,yLine,':',label = r'МНК $\alpha = ' + str(round(MNK.slope,4))+'\pm'+str(round(MNK.stderr,5))+'$'+"  Пересечение с осью x: "+str(round(xIntersecton,2)))
+    plt.errorbar(power,deltaTemp*massPerSecond,fmt='o',label = 'Эксперементальные точки')
+    plt.xticks(np.linspace(xLine[0],xLine[-1],len(power)*2))
     plt.yticks(np.linspace(yLine[0],yLine[-1],len(power)*5))
+    plt.grid()
+    plt.xlabel("Мощность нагревателя [Вт]")
+    plt.ylabel("$m \Delta T \; [kg \cdot s]$")
     ax.legend(loc = 'lower right')
     plt.show()
 
