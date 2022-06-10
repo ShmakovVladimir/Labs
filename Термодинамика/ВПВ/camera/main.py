@@ -28,7 +28,7 @@ try:
             layer = cv2.resize(layer, dim, interpolation = cv2.INTER_AREA)
             cv2.imwrite(str(layerNum)+'file.jpg',layer)
             cv2.imshow('video',layer)
-            molecules = cv2.HoughCircles(layer,cv2.HOUGH_GRADIENT,1,3,param1=50,param2=26,minRadius=0,maxRadius=100)
+            molecules = cv2.HoughCircles(layer,cv2.HOUGH_GRADIENT,1,2,param1=50,param2=20,minRadius=0,maxRadius=100)
             if molecules is not None:
                 detected = len(np.around(molecules)[0])
             else:
