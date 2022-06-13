@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import time
+
 def Delay() -> bool:
     time.sleep(0.07)
     k = cv2.waitKey(30) & 0xFF
@@ -8,10 +9,9 @@ def Delay() -> bool:
         return False
     return True
 
-
-
 capture = cv2.VideoCapture(1)
 alpha = True
+
 try:
     while Delay():
         ret, img = capture.read()
