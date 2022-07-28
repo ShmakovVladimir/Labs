@@ -2,8 +2,10 @@
 
 Цель работы - продемонстрировать распределение в поле потенциальной силы(распределение Больцмана). В работе используется незамысловатая установка, описание которой можно найти в [отчёте](https://github.com/ShmakovVladimir/Labs/blob/master/%D0%A2%D0%B5%D1%80%D0%BC%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0/%D0%92%D0%9F%D0%92/%D0%9E%D0%A2%D0%A7%D0%95%D0%A2.pdf)
 
-Демонстрация работы установки:
+
+
 ![Alt Text](https://github.com/ShmakovVladimir/Labs/blob/master/%D0%A2%D0%B5%D1%80%D0%BC%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0/%D0%92%D0%9F%D0%92/IMAGES/demonstraion.gif)
+
 
 
 
