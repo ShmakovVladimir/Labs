@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
+            "file": "Электроника/Напыление тонких плёнок в вакууме/Отчёт.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
+                "file": "Электроника/Напыление тонких плёнок в вакууме/Отчёт.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
+                "file": "Электроника/Напыление тонких плёнок в вакууме/Отчёт.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md"
+                "file": "Электроника/Напыление тонких плёнок в вакууме/Отчёт.md"
               }
             }
           }
@@ -130,7 +130,10 @@
   },
   "active": "5259b2cde34409a2",
   "lastOpenFiles": [
-    "Электричество и Магнетизм/earthMagneticField/EarthMagneticField.png",
-    "Электричество и Магнетизм/earthMagneticField/Отчёт.md"
+    "Электроника/Напыление тонких плёнок в вакууме/распределение толщины.md",
+    "Электроника/Напыление тонких плёнок в вакууме/Отчёт.md",
+    "Электроника/Напыление тонких плёнок в вакууме/установка для напыления плёнок.md",
+    "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
+    "Электричество и Магнетизм/earthMagneticField/EarthMagneticField.png"
   ]
 }
