@@ -7,9 +7,11 @@
         "id": "5259b2cde34409a2",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "Электроника/Напыление тонких плёнок в вакууме/materialSpectr.png"
+            "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -75,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Электроника/Напыление тонких плёнок в вакууме/materialSpectr.png",
+                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Электроника/Напыление тонких плёнок в вакууме/materialSpectr.png",
+                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Электроника/Напыление тонких плёнок в вакууме/materialSpectr.png"
+                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md"
               }
             }
           }
@@ -128,12 +130,15 @@
   },
   "active": "5259b2cde34409a2",
   "lastOpenFiles": [
-    "Электроника/Напыление тонких плёнок в вакууме/lightSpectr.png",
-    "Электроника/Напыление тонких плёнок в вакууме/absorpByThikness.png",
-    "Электроника/Напыление тонких плёнок в вакууме/Отчёт.md",
-    "Электроника/Напыление тонких плёнок в вакууме/распределение толщины.md",
-    "Электроника/Напыление тонких плёнок в вакууме/установка для напыления плёнок.md",
+    "Электричество и Магнетизм/earthMagneticField/ЭкспериментальнаяУстановка.md",
+    "Электричество и Магнетизм/earthMagneticField/ЭкспериментальнаяУстановка.png",
+    "Excalidraw/Drawing 2022-09-21 19.51.58.excalidraw.md",
     "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
-    "Электричество и Магнетизм/earthMagneticField/EarthMagneticField.png"
+    "Электричество и Магнетизм/earthMagneticField/magnetic error in magnetic dipole field.md",
+    "Электричество и Магнетизм/earthMagneticField/magnetic error in magnetic dipole field.png",
+    "Электричество и Магнетизм/earthMagneticField/Pasted Image 20220921153559_366.png",
+    "Электричество и Магнетизм/earthMagneticField/deltaB0Equation.png",
+    "Электричество и Магнетизм/earthMagneticField/EarthMagneticField.png",
+    "Электричество и Магнетизм/earthMagneticField/main.pdf"
   ]
 }
