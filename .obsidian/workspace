@@ -7,11 +7,9 @@
         "id": "5259b2cde34409a2",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
-            "mode": "source",
-            "source": false
+            "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.pdf"
           }
         }
       }
@@ -77,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
+                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +92,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
+                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.md"
+                "file": "Электричество и Магнетизм/earthMagneticField/Отчёт.pdf"
               }
             }
           }
@@ -130,15 +128,15 @@
   },
   "active": "5259b2cde34409a2",
   "lastOpenFiles": [
+    "Электричество и Магнетизм/earthMagneticField/Pasted image 20220921201750.png",
+    "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
     "Электричество и Магнетизм/earthMagneticField/ЭкспериментальнаяУстановка.md",
     "Электричество и Магнетизм/earthMagneticField/ЭкспериментальнаяУстановка.png",
     "Электричество и Магнетизм/earthMagneticField/erathMagnticField.md",
-    "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
     "Электричество и Магнетизм/earthMagneticField/erathMagnticField.png",
     "Электричество и Магнетизм/earthMagneticField/EarthMagneticField.png",
     "Электричество и Магнетизм/earthMagneticField/deltaB0Equation.png",
     "Excalidraw/Drawing 2022-09-21 19.51.58.excalidraw.md",
-    "Электричество и Магнетизм/earthMagneticField/magnetic error in magnetic dipole field.md",
-    "Электричество и Магнетизм/earthMagneticField/magnetic error in magnetic dipole field.png"
+    "Электричество и Магнетизм/earthMagneticField/magnetic error in magnetic dipole field.md"
   ]
 }
