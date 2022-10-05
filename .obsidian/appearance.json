@@ -1,4 +1,7 @@
 {
   "theme": "moonstone",
-  "cssTheme": "Things"
+  "cssTheme": "Things",
+  "enabledCssSnippets": [
+    "something"
+  ]
 }
