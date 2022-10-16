@@ -3,5 +3,6 @@
   "cssTheme": "Things",
   "enabledCssSnippets": [
     "something"
-  ]
+  ],
+  "accentColor": ""
 }
