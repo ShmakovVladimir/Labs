@@ -1,9 +1,0 @@
-{
-  "theme": "moonstone",
-  "cssTheme": "Things",
-  "enabledCssSnippets": [
-    "something"
-  ],
-  "accentColor": "",
-  "baseFontSize": 20
-}
