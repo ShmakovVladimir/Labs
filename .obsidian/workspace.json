@@ -8,12 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "37910924478a875c",
+            "id": "38d3daa73a160ec6",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Электричество и Магнетизм/harmonicAnalys/pulseTauModulationData.md"
+                "file": "Электричество и Магнетизм/harmonicAnalys/Отчёт.md",
+                "mode": "preview",
+                "source": false
               }
             }
           }
@@ -67,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "2a876fb5f3ec6f9e",
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Электричество и Магнетизм/harmonicAnalys/pulseTauModulationData.md",
+                "file": "Электричество и Магнетизм/harmonicAnalys/Отчёт.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Электричество и Магнетизм/harmonicAnalys/pulseTauModulationData.md",
+                "file": "Электричество и Магнетизм/harmonicAnalys/Отчёт.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Электричество и Магнетизм/harmonicAnalys/pulseTauModulationData.md"
+                "file": "Электричество и Магнетизм/harmonicAnalys/Отчёт.md"
               }
             }
           }
@@ -137,17 +139,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "37910924478a875c",
+  "active": "38d3daa73a160ec6",
   "lastOpenFiles": [
-    "Электричество и Магнетизм/harmonicAnalys/pulse_100_1.png",
+    "Электричество и Магнетизм/harmonicAnalys/a_side_a_carr_by_m.png",
+    "Электричество и Магнетизм/harmonicAnalys/AmpModulationHarmonies.md",
+    "Электричество и Магнетизм/harmonicAnalys/Отчёт.md",
+    "Электричество и Магнетизм/harmonicAnalys/pulseTauModulationData.png",
     "Электричество и Магнетизм/harmonicAnalys/pulseTauModulationData.md",
-    "Pasted Image 20221017005745_479.jpg",
-    "Pasted Image 20221017005644_371.jpg",
-    "Электричество и Магнетизм/harmonicAnalys/pulse_photo_40_200_2/1.jpg",
-    "Электричество и Магнетизм/Закон Кюри-Вейсса/Отчет.md",
-    "Электричество и Магнетизм/earthMagneticField/Отчёт.md",
-    "Электричество и Магнетизм/Закон Кюри-Вейсса/magMoment.md",
-    "Электричество и Магнетизм/Закон Кюри-Вейсса/endingPlot.png",
-    "Электричество и Магнетизм/Закон Кюри-Вейсса/eperimentalSetup.md"
+    "Электричество и Магнетизм/harmonicAnalys/pulse_100_1.png",
+    "Электричество и Магнетизм/harmonicAnalys/pulse_50_1.png",
+    "Электричество и Магнетизм/harmonicAnalys/plot3_data.png",
+    "Электричество и Магнетизм/harmonicAnalys/Pasted Image 20221017005903_394.jpg",
+    "Электричество и Магнетизм/harmonicAnalys/ampModulationData.png"
   ]
 }

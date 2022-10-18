@@ -4,5 +4,6 @@
   "enabledCssSnippets": [
     "something"
   ],
-  "accentColor": ""
+  "accentColor": "",
+  "baseFontSize": 20
 }
