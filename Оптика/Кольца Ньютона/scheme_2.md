@@ -19,7 +19,7 @@ tags: [excalidraw]
 # Embedded files
 e601e15d7b6ef4b9948f1fb8f38e03a09532dd57: $$2d = \frac{r^{2}}{R}$$
 bd9371af975b0f70ed6714fd1e1a9270522db3ad: $$\Delta = \frac{r^{2}}{R} + \frac{\lambda}{2}$$
-4bbe1565b8dd2325527e23bf0a81a04d9c2ce985: [[Pasted Image 20230302034927_349.png]]
+4bbe1565b8dd2325527e23bf0a81a04d9c2ce985: [[scheme.png]]
 
 %%
 # Drawing
