@@ -20,8 +20,7 @@
   - 
 
 
-https://github.com/ShmakovVladimir/Labs/assets/101532383/36ada60a-445c-4bfb-ae5a-2e0c3cd071b5
-
+https://github.com/ShmakovVladimir/Labs/assets/101532383/3990983f-62b1-4040-990b-e3e87611d62a
 
 
 ### Оптика :trollface:
