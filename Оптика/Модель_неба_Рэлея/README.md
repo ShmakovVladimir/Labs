@@ -3,3 +3,7 @@
 Для исследования распределения использована установка, краткое описание которой можно найти в [отчете](https://github.com/ShmakovVladimir/Labs/blob/master/%D0%9E%D0%BF%D1%82%D0%B8%D0%BA%D0%B0/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_%D0%BD%D0%B5%D0%B1%D0%B0_%D0%A0%D1%8D%D0%BB%D0%B5%D1%8F/VPV_itog.pdf). 
 
 На этой анимации можете наблюдать нейтральную точку:
+
+
+https://github.com/ShmakovVladimir/Labs/assets/101532383/8ad3b3e4-1e8a-4995-842d-3570933d174e
+
