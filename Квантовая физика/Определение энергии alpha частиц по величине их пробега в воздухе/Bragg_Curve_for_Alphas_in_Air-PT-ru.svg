@@ -1,0 +1,8 @@
+<svg width="203mm" height="135mm" version="1.1" viewBox="0 0 203 135" xmlns="http://www.w3.org/2000/svg">
+ <rect width="203" height="135" fill="#fff"/>
+ <g fill="none" stroke="#000"><path d="m20.5 112.5h-4m4-20h-3m3-20h-4m4-20h-3m3-20h-4m4-20h-3m183.4 100 0 3m-20-3v3m-20-3v2m-20-2v3m-20-3v2m-20-2v3m-20-3v2m-20-2v3m-20-3v2m-20-2v3" stroke-width=".5"/><path d="m20.5 78.5c4-.5 32.7-2.2 67.6-9.6 30.4-6.4 59.4-19 72.4-40.4 14-23 16.4-9.5 18-1 5.4 28.2 6.9 56.7 8 85" stroke="#00f"/><rect x="20.5" y="2.5" width="180.4" height="110"/></g>
+ <g style="font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman'" text-anchor="middle">
+ <g font-size="10px"><text x="113" y="131">Длина пути, см</text>
+ <text transform="rotate(-90)" x="-58" y="10">Потеря энергии, МэВ/см</text></g>
+ <g font-size="8px"><text x="21" y="123">0</text><text x="61" y="123">1</text><text x="101" y="123">2</text><text x="141" y="123">3</text><text x="181" y="123">4</text><text x="91" y="13">Потери энергии альфа-частицей<tspan x="91" y="23">с начальной энергией 5,49 МэВ</tspan><tspan x="91" y="33">в воздухе</tspan></text>
+ <g text-anchor="end"><text x="16" y="115">0</text><text x="16" y="75">1</text><text x="16" y="35">2</text></g></g></g></svg>
