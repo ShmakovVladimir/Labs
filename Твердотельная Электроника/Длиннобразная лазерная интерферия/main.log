@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.27)  28 FEB 2024 02:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.27)  5 MAR 2024 18:16
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/vladimir/BOTAY!/Labs/Твердотельная Электроника/Длиннобразная лазерная интерферия/main.tex"
+**"/home/vladimir/BOTAY!/Labs/Твердотельная Электроника/Длиннобразная лазерная интерферия/main"
 (/home/vladimir/BOTAY!/Labs/Твердотельная Электроника/Длиннобразная лазерная интерферия/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -295,11 +295,8 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count267
 \l__pdf_internal_box=\box51
-) (./main.aux
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 5.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -317,6 +314,10 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 8.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 8.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
 LaTeX Font Info:    ... okay on input line 8.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -375,25 +376,100 @@ LaTeX Info: Redefining \th on input line 8.
 
 [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [1] (./main.aux)
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+<megahuinya.jpg, id=11, 1284.8pt x 657.45625pt>
+File: megahuinya.jpg Graphic file (type jpg)
+<use megahuinya.jpg>
+Package pdftex.def Info: megahuinya.jpg  used on input line 51.
+(pdftex.def)             Requested size: 257.35518pt x 131.68956pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 57.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 57.
+<dermo.jpg, id=12, 357.58594pt x 382.42876pt>
+File: dermo.jpg Graphic file (type jpg)
+<use dermo.jpg>
+Package pdftex.def Info: dermo.jpg  used on input line 67.
+(pdftex.def)             Requested size: 257.35518pt x 275.24928pt.
+<data_1.png, id=13, 716.55705pt x 313.6518pt>
+File: data_1.png Graphic file (type png)
+<use data_1.png>
+Package pdftex.def Info: data_1.png  used on input line 79.
+(pdftex.def)             Requested size: 360.29568pt x 157.71089pt.
+ [1{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./megahuinya.jpg> <./dermo.jpg>]
+<data_2.png, id=23, 725.5908pt x 309.67696pt>
+File: data_2.png Graphic file (type png)
+<use data_2.png>
+Package pdftex.def Info: data_2.png  used on input line 87.
+(pdftex.def)             Requested size: 360.29568pt x 153.7749pt.
+
+/home/vladimir/BOTAY!/Labs/Твердотельная Электроника/Длиннобразная лазерная интерферия/main.tex:95: Undefined control sequence.
+l.95 ...� от времени при $L = 16 \text
+                                                  { см}$ и $L = 24 \text{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \cyrs invalid in math mode on input line 95.
+
+
+LaTeX Warning: Command \cyrm invalid in math mode on input line 95.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+/home/vladimir/BOTAY!/Labs/Твердотельная Электроника/Длиннобразная лазерная интерферия/main.tex:95: Undefined control sequence.
+l.95 ...�и $L = 16 \text{ см}$ и $L = 24 \text
+                                                  { см}$ изображены
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \cyrs invalid in math mode on input line 95.
+
+
+LaTeX Warning: Command \cyrm invalid in math mode on input line 95.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+<L_16cm.png, id=24, 1311.33916pt x 348.3414pt>
+File: L_16cm.png Graphic file (type png)
+<use L_16cm.png>
+Package pdftex.def Info: L_16cm.png  used on input line 100.
+(pdftex.def)             Requested size: 514.71037pt x 136.72429pt.
+<L_24cm.png, id=25, 1311.33916pt x 348.3414pt>
+File: L_24cm.png Graphic file (type png)
+<use L_24cm.png>
+Package pdftex.def Info: L_24cm.png  used on input line 107.
+(pdftex.def)             Requested size: 514.71037pt x 136.72429pt.
+[2 <./data_1.png> <./data_2.png>] [3 <./L_16cm.png> <./L_24cm.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3546 strings out of 474137
- 55991 string characters out of 5744488
- 1927187 words of memory out of 5000000
- 25885 multiletter control sequences out of 15000+600000
- 563738 words of font info for 43 fonts, out of 8000000 for 9000
+ 3603 strings out of 474137
+ 56990 string characters out of 5744488
+ 1929187 words of memory out of 5000000
+ 25941 multiletter control sequences out of 15000+600000
+ 564880 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,5n,65p,425b,196s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on main.pdf (2 pages, 87646 bytes).
+ 57i,7n,65p,441b,240s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on main.pdf (4 pages, 813121 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

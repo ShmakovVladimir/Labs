@@ -1,12 +1,22 @@
 #!/bin/bash
 touch $1
-echo "\documentclass[a4paper]{article}" > $1
+
+#importing colorsheme
+colorsheme=()
+dir="$(cd $(dirname "$0"); pwd)"
+scheme_file="${dir}/schemes/bootstrap.txt"
+while read line; 
+do colorsheme+=($line)
+done<$scheme_file
+
+
+echo "\documentclass[a4paper, 14pt]{article}" > $1
 echo "\usepackage[dvipsnames]{xcolor}" >> $1
 echo "\usepackage[top=70pt,bottom=70pt,left=48pt,right=46pt]{geometry}" >> $1
-echo "\definecolor{header}{RGB}{254, 100, 11}" >> $1
-echo "\definecolor{defenition}{RGB}{136, 57, 239}" >> $1
-echo "\definecolor{main_title}{RGB}{30, 102, 245}" >> $1
-echo "\definecolor{sub_header}{RGB}{32, 159, 181}" >> $1
+echo "\definecolor{header}{RGB}{${colorsheme[1]}}" >> $1
+echo "\definecolor{defenition}{RGB}{${colorsheme[3]}}" >> $1
+echo "\definecolor{main_title}{RGB}{${colorsheme[0]}}" >> $1
+echo "\definecolor{sub_header}{RGB}{${colorsheme[2]}}" >> $1
 echo "\usepackage[english, russian]{babel}" >> $1
 echo "\usepackage[utf8]{inputenc}" >> $1
 echo "\usepackage{amsmath}" >> $1
@@ -36,10 +46,16 @@ echo "" >> $1
 echo "" >> $1
 echo "" >> $1
 echo "\section*{\textcolor{header}{Теоретические сведения}}" >> $1
+echo "Число A называется \textcolor{defenition}{пределом числовой последовательности}..." >> $1
 echo "" >> $1
 echo "" >> $1
 echo "" >> $1
 echo "\section*{\textcolor{header}{Методика}}" >> $1
+echo "\subsection*{\textcolor{sub_header}{Оборудование}}" >> $1
+echo "" >> $1
+echo "" >> $1
+echo "" >> $1
+echo "\subsection*{\textcolor{sub_header}{Экспериментальная установка}}" >> $1
 echo "" >> $1
 echo "" >> $1
 echo "" >> $1

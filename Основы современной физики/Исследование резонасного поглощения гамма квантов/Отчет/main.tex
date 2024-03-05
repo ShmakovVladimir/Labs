@@ -1,0 +1,141 @@
+\documentclass[a4paper, 14pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[top=70pt,bottom=70pt,left=46pt,right=46pt]{geometry}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepgfplotslibrary{groupplots}
+\definecolor{header}{RGB}{92,184,92}
+\definecolor{defenition}{RGB}{217,83,79}
+\definecolor{main_title}{RGB}{66,139,202}
+\definecolor{sub_header}{RGB}{91,192,222}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\title{\textcolor{main_title}{Исследование резонансного поглощения $\gamma$ квантов}}
+\author{Шмаков Владимир Евгеньевич - ФФКЭ гр. Б04-105}
+
+
+
+
+
+
+\begin{document}
+\maketitle
+
+
+
+\section*{\textcolor{header}{Цель работы}}
+
+
+
+
+\section*{\textcolor{header}{Теоретические сведения}}
+
+
+\begin{minipage}{0.5\textwidth}
+
+    \input{lorenz.tex}
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+    \raggedright
+    В работе рассматривается процесс резонансного поглощения $\gamma$ квантов.
+    Кванты, испущенные возбуждённым ядром налетают на поглотитель, содержащий те же
+    ядра в невозбуждённом состоянии.
+    \newline
+    Вследствие отдачи( \textcolor{defenition}{эффекта Мессбауэра}), ядро, испускающее $\gamma$ квант, приобретает
+    импульс равный по абсолютной величине импульсу $\gamma$ кванта. Вследствие этого эффекта
+    линии поглощения и испускания смещаются на величину $R$ - энергию отдачи:
+    \begin{equation}
+        R = \frac{p^{2}}{M_{\text{я}}} = \frac{E_{\gamma}^{2}}{2 M_{\text{я}} c^{2}}
+    \end{equation}
+\end{minipage}
+
+
+
+
+\section*{\textcolor{header}{Методика}}
+\subsection*{\textcolor{sub_header}{Оборудование}}
+
+
+\subsection*{\textcolor{sub_header}{Экспериментальная установка}}
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width = 0.4\textwidth]{experimenta_setup.png}
+        \caption{Схема экспериментальной установки.}
+        \label{fig:experimental_setup}
+    \end{center}
+\end{figure}
+
+Схема экспериментальной установки изображена на рисунке $\ref{fig:experimental_setup}$.
+Для детектирования $\gamma$ - квантов используется ФЭУ. Пересчетное устройство позволяет
+устанавливать верхний и нижний пороги срабатывания. Таким образом, налетающие $\gamma$ - кванты
+могут быть отсортированы по энергии(проанализирован спектр источника).
+
+Поглотитель $\gamma$ - излучения приводится в движение посредством механизма преобразования
+вращательного движения в поступательное. <<Источником>> вращательного движения является
+электронный двигатель РД-09.
+
+
+
+
+
+
+\section*{\textcolor{header}{Обработка экспериментальных данных}}
+
+\begin{figure}[h]
+    \begin{center}
+        \input{raw_data.tex}
+    \end{center}
+    \caption{Экспериментальные точки, приближенные контуром Воигта( смотрите формулу $\ref{approximation_fucntion_1}$)}.
+    \label{fig:raw_data}
+\end{figure}
+
+Для предварительных выводов приблизим данные контуром Воигта, часто
+используемом в спектроскопии.
+
+\begin{equation}
+    \begin{aligned}
+        f(x) = O - A \cdot V(x + B, \sigma, \gamma) \text{ ,} \\
+        \text{ где } V(x, \sigma, \gamma) = \int_{- \infty}^{\infty} G(x', \sigma) L(x - x', \gamma) dx'
+    \end{aligned}
+    \label{approximation_fucntion_1}
+\end{equation}
+
+Функция $V(x, \sigma, \gamma)$ - свёртка плотностей <<центрированных>> нормального распределения и распределения Коши.
+Параметр $\sigma$ - дисперсия нормального распределения, $\gamma$ - коэффициент масштаба распределения Коши.
+
+Другими словами, величины $\sigma$ и $\gamma$ показывают степень родства искомого профиля с естественным и Лоренцевским профилем.
+Как видно на рисунке $\ref{fig:raw_data}$, параметр $\gamma$ всегда больше параметра $\sigma$. ДОБАВИТЬ ВЫВОД ИЗ ЭТОГО
+
+
+Найдём параметры контура точнее:
+\begin{enumerate}
+    \item Переведём результаты измерений в диапазон (0, 1)
+          \subitem Вычтем из каждого экспериментального значения $I_{i}$ максимально достигнутое значение счета $max_{i} I_{i}$.
+          \subitem Отнормируем выборку $I_{i}$
+    \item Рассмотрим полученные данные с точки зрения таблично заданной плотности вероятности. Пользуясь генератором случайных чисел построим выборку с заданной плотностью. Пользуюсь статистическими методами
+          оценим характерные параметры полученной выборки.
+    \item Методом максимального правдоподобия найдем параметры исходного распределения. Оценим качество приближения
+          пользуясь критерием $\chi^{2}$.
+\end{enumerate}
+\begin{figure}[h]
+    \input{hist.tex}
+    \caption{Нахождение параметров распределений методом максимального правдоподобия}
+\end{figure}
+
+
+\section*{\textcolor{header}{Вывод}}
+
+
+
+
+
+
+\end{document}
