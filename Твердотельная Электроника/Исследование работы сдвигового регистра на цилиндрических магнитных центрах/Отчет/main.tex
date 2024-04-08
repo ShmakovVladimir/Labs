@@ -1,0 +1,100 @@
+\documentclass[a4paper, 14pt]{extarticle}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[top=70pt,bottom=70pt,left=48pt,right=46pt]{geometry}
+\definecolor{header}{RGB}{92,184,92}
+\definecolor{defenition}{RGB}{217,83,79}
+\definecolor{main_title}{RGB}{66,139,202}
+\definecolor{sub_header}{RGB}{91,192,222}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\title{\textcolor{main_title}{Исследование работы сдвигового регистра на цилиндрических магнитных центрах}}
+\author{Шмаков Владимир Евгеньевич - ФФКЭ гр. Б04-105}
+
+
+
+
+
+
+\begin{document}
+\maketitle
+
+\section*{\textcolor{header}{Введение}}
+
+
+
+Пузырьковая память, или память на цилиндрических магнитных доменах является энергонезависимой памятью, 
+разработанной в Bell Labs в 1967 году \textcolor{defenition}{Эндрю Бобеком}.
+
+Эта была одна из первых разработок в области твердотельных запоминающих устройств. 
+Из-за быстроты доступа к битам, пузырьковая память может быть использована в качестве оперативной памяти.
+
+
+
+\section*{\textcolor{header}{Цель работы}}
+\begin{itemize}
+    \item Ознакомиться с принципом работы сдвигового регистра на цилиндрических магнитных доменах
+    \item Найти область устойчивости
+\end{itemize}
+\section*{\textcolor{header}{Теоретические сведения}}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics*[width = 0.5\linewidth]{no_field.jpg}
+        \caption{Ферромагнетик в отсутствие поля}
+        \label{fig:no_field}
+    \end{subfigure}%
+    \begin{subfigure}{0.4\textwidth}
+        \centering  
+        \includegraphics*[width = 0.5\linewidth]{field.png}
+        \label{fig:field}
+        \caption{Ферромагнетик во внешенм поле}
+    \end{subfigure}
+\end{figure}
+
+
+
+\section*{\textcolor{header}{Методика}}
+\subsection*{\textcolor{sub_header}{Оборудование}}
+
+\begin{itemize}
+    \item Поляризационный микроскоп
+    \item Ферромагнитный образец
+    \item Генераторы вращающего и сдвигающего магнитных полей
+    \item Аттеньаторы
+    \item Амперметры
+    \item Блок питания
+\end{itemize}
+
+\subsection*{\textcolor{sub_header}{Экспериментальная установка}}
+
+
+
+\section*{\textcolor{header}{Обработка экспериментальных данных}}
+
+Показания амперметров линейно связаны с велинами полей $H_{rot}$ и $H_{tr}$.
+Пересчитав силы тока в поля, построим область работоспособности линейного участка 
+продвижения( рисунок $\ref{fig:main}$).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics*[width = 1 \textwidth]{out.png}
+    \caption{Результат эксперимента.}
+    \label{fig:main}
+\end{figure}
+
+
+\section*{\textcolor{header}{Вывод}}
+
+
+
+
+
+
+\end{document}
