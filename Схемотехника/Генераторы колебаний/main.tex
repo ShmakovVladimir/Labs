@@ -57,42 +57,52 @@
 При наличии в цепи кварцевого резонатора, 
 частота меняется слабо: $\Delta f_{q} = 7 \text{ Гц}$. 
 Если стабилизация частоты отсутствует, то частота меняетс на $\Delta f \sim 18 \text{ кГц}$. 
-
 Полученные данные позволяют найти добротность кварцевого резонатора:
+
 \begin{equation}
-    Q_{\text{к}} = \frac{\Delta f Q}{\Delta f_{q}} \sim 3 \cdot 10^{4}
+\textcolor{defenition}{Q_{\text{к}}} = \frac{\Delta f \cdot Q}{\Delta f_{q}} \textcolor{defenition}{\sim 3 \cdot 10^{4}}
 \end{equation}
+
 
 Получили что добротность кварцевого резонатора достаточно высока, как и добротность любой
 акустической системы. Для сравнения, добротность струны $\sim 10^3$.
 
 \subsection*{\textcolor{sub_header}{Исследование стабильности частоты кварцевого генератора}}
 
-Построим график зависимости частоты генерации в зависимости от напряжения питания.
+Построим график зависимости частоты генерации в зависимости от напряжения питания:
 
-\begin{figure}[htbp]
+\begin{minipage}{0.5\textwidth}
     \centering
-    \includegraphics[width = 0.5 \textwidth]{stabil.png}
-    \caption{Исследование зависимости частоты генерации от напряжения}
-    \label{fig:stabil}
-\end{figure}
+    % \begin{figure}
+        \includegraphics[width = 0.9\textwidth]{stabil.png}
+    % \end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+    \centering
+    Как видно на рисунке слева, в отсутствие кварцевого резонатора, 
+    частота линейно падает с ростом напряжения питания. В схеме со стабилизацией,
+    частота меняется максимум на $10 \text{ Гц}$.  
+        
+\end{minipage}
 
-Как видно на рисунке $\ref{fig:stabil}$ в отсутствие кварцевого резонатора, 
-частота линейно падает с ростом напряжения питания. В схеме со стабилизацией,
-частота меняется максимум на $10 \text{ Гц}$.  
+
 
 \subsection*{\textcolor{sub_header}{Определение параметров кварцевого резонатора}}
 
 Последовательно с кварцевым резонатором подключим конденсатор ёмкостью $C_{s} = 120 \text{ пФ}$.
 При этом частота генерации изменится на $\Delta f_{k} = 0.007 \text{ МГц}$. 
 
-\begin{equation*}
-C_{k} = \frac{2 \cdot C_{s} \Delta f_{k}}{f_{k}} = 1.68 \text{ пФ}
-\ \
-L_{k} = \frac{1}{4 \pi^{2} f_{k}^{2} C_{k}} = 0.015 \text{ Гн}
-\ \ 
-r_{k} = \frac{2 \pi f_{k} L_{k}}{Q_{k}} = 3.16 \text{ Ом}
-\end{equation*}
+
+$$
+\textcolor{defenition}{C_{k}} = \frac{2 \cdot C_{s} \Delta f_{k}}{f_{k}} = \textcolor{defenition}{1.68 \text{ пФ}}
+$$
+$$
+\textcolor{defenition}{L_{k}} = \frac{1}{4 \pi^{2} f_{k}^{2} C_{k}} = \textcolor{defenition}{0.015 \text{ Гн}}
+$$
+$$
+\textcolor{defenition}{r_{k}} = \frac{2 \pi f_{k} L_{k}}{Q_{k}} = \textcolor{defenition}{3.16 \text{ Ом}}
+$$
 
 
 \end{document}
