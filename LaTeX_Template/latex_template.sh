@@ -10,7 +10,7 @@ do colorsheme+=($line)
 done<$scheme_file
 
 
-echo "\documentclass[a4paper, 14pt]{article}" > $1
+echo "\documentclass[a4paper, 14pt]{extarticle}" > $1
 echo "\usepackage[dvipsnames]{xcolor}" >> $1
 echo "\usepackage[top=70pt,bottom=70pt,left=48pt,right=46pt]{geometry}" >> $1
 echo "\definecolor{header}{RGB}{${colorsheme[1]}}" >> $1
