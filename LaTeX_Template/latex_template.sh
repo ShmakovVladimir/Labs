@@ -28,7 +28,7 @@ echo -e "Название работы: \c"
 read work_name
 echo "\title{\textcolor{main_title}{${work_name}}}" >> $1
 
-echo "\author{Шмаков Владимир Евгеньевич - ФФКЭ гр. Б04-105}" >> $1
+echo "\author{Шмаков Владимир Евгеньевич - ФФКЭ гр. Б04-103}" >> $1
 echo "" >> $1
 echo "" >> $1
 echo "" >> $1
