@@ -14,8 +14,13 @@
 \usepackage{amsmath}
 \usepackage{lettrine}
 \title{\textcolor{main_title}{Фотоэлектрический способ преобразования энергии солнечного излучения}}
-\author{Шмаков Владимир Евгеньевич - ФФКЭ гр. Б04-103}
 
+\author{% 
+    {Абрамов Александр, Б04-104} \\
+    {Алямовская Анна Андреевна, Б04-103}\\
+    {Раводина Александра Михайловна, Б04-103} \\
+    {Шмаков Владимир Евгеньевич, Б04-103}%
+}
 
 \newtcolorbox{fequation}[1][]{ams equation*,size=small,#1}
 
@@ -97,12 +102,12 @@
 
 Прямая ветвь темновой характеристики изображена на рисунке \ref{fig:dark_straight}. По наклону кривой посчитаем прямое сопротивление фотопреобразователя:
 $$
-R_{\text{пр}} = \frac{d U_{\text{пр}}}{d I_{\text{пр}}} = \frac{1}{a} = 
+R_{\text{пр}} = \frac{d U_{\text{пр}}}{d I_{\text{пр}}} = \frac{1}{a} \sim 100 \text{кОм}
 $$
 
 Обратная ветвь темновой характеристики изображена на рисунке \ref{fig:dark_back}.
 $$
-R_{\text{обр}} = \frac{d U_{\text{обр}}}{d I_{\text{обр}}} = \frac{1}{a} = 
+R_{\text{обр}} = \frac{d U_{\text{обр}}}{d I_{\text{обр}}} = \frac{1}{a} \sim 41 \text{кОм} 
 $$
 
 \begin{figure}[htbp]
@@ -125,14 +130,25 @@ $$
 Коэффициент наклона линейного участка зависимости позволяет найти параметры $A$ и $I_{s}$.
 
 $$
-I_{s} = e^{b} \sim \text{ мА}
+I_{s} = e^{b} \sim 6 \text{ мкА}
 $$
 
 $$
-A = \frac{1}{0.025 a} \sim 
+A = \frac{1}{0.025 a} \sim 85.1
 $$
 
 \subsection*{\textcolor{sub_header}{Световые характеристики}}
+
+
+Результаты измерений световой характеристики представлены на рисунке \ref{fig:light_straight}. Найдём наилучшие параметры функции $y = A e^{(x - b) / c} + O$, приближающие экспериментальную зависимость. 
+
+
+Найденный параметр $O$ - есть ток короткого замыкания $\to$ $I_{\text{к.з.}} = 14 \pm 0.2 \text{мА}$. 
+ЭДС холостого хода находится из условия отсутствия тока в цепи. Решая уравнение $A e^{(U_{\text{x.x.}} - b) / c} + O = 0$, получаем:
+\begin{equation}
+    U_{\text{x.x.}} = c \operatorname{ln}(\frac{-O}{A}) + b = 6.3 \pm 0.2 \text{В}
+    \label{uxx}
+\end{equation}
 
 
 
@@ -144,15 +160,6 @@ $$
     \label{fig:light_straight}
 \end{figure}
 
-Результаты измерений световой характеристики представлены на рисунке \ref{fig:light_straight}. Найдём наилучшие параметры функции $y = A e^{(x - b) / c} + O$, приближающие экспериментальную зависимость. 
-
-
-Найденный параметр $O$ - есть ток короткого замыкания $\to$ $I_{\text{к.з.}} = 14 \pm 0.2 \text{мА}$. 
-ЭДС холостого хода находится из условия отсутствия тока в цепи. Решая уравнение $A e^{(U_{\text{x.x.}} - b) / c} + O = 0$, получаем:
-\begin{equation}
-    U_{\text{x.x.}} = c \operatorname{ln}(\frac{-O}{A}) + b = 6.3 \pm 0.2 \text{В}
-    \label{uxx}
-\end{equation}
 
 Параметр приближения $b$(точка излома) есть напряжение нагрузки $U_n = 5.2 \pm 0.1 \text{В}$.
 
@@ -188,13 +195,6 @@ R_{\text{опт}} = \frac{U_{\text{н}}}{I_{\text{н}}} \sim 0.5 \text{ кОм}.
 
 
 \subsection*{\textcolor{sub_header}{Световые характеристики снятые с использованием оптических фильтров}}
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width = 0.9\textwidth]{pics/red_filter.png} \hfill
-    \includegraphics[width = 0.9\textwidth]{pics/black_filter.png}
-    \caption{Зависимости $I = f(U)$ для световых характеристик, снятых при использовании красного и затемняющего фильтров.}
-    \label{fig:filters}
-\end{figure}
 
 
 
@@ -205,6 +205,13 @@ $$
 $$
 I_{\text{к.з.}}^{\text{темный}} \sim 6.93 \text{мА} \text{   } U_{\text{x.x}}^{\text{темный}} \sim 5.95 \text{В}
 $$
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{pics/red_filter.png} \hfill
+    \includegraphics[width = 0.7\textwidth]{pics/black_filter.png}
+    \caption{Зависимости $I = f(U)$ для световых характеристик, снятых при использовании красного и затемняющего фильтров.}
+    \label{fig:filters}
+\end{figure}
 
 
 Построим график зависимости $ln(I_{\text{к.з.}})$ от $U_{x.x}$(смотрите рисунок \ref{fig:line}). Параметры прямой, проходящей через точки позволяют определить $I_s$.
@@ -224,6 +231,8 @@ $$
     \caption{Зависимость логарифма силы тока короткого замыкания от напряжения холостого хода}
     \label{fig:line}
 \end{figure}
+
+\newpage
 \section*{\textcolor{header}{Вывод}}
 
 
