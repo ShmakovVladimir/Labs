@@ -88,8 +88,49 @@
 \section*{\textcolor{header}{Обработка экспериментальных данных}}
 
 \subsection*{\textcolor{sub_header}{Темновые характеристики}}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{pics/dark_straight.png}
+    \caption{Прямая ветвь темновой характеристики}
+    \label{fig:dark_straight}
+\end{figure}
+
+Прямая ветвь темновой характеристики изображена на рисунке \ref{fig:dark_straight}. По наклону кривой посчитаем прямое сопротивление фотопреобразователя:
+$$
+R_{\text{пр}} = \frac{d U_{\text{пр}}}{d I_{\text{пр}}} = \frac{1}{a} = 
+$$
+
+Обратная ветвь темновой характеристики изображена на рисунке \ref{fig:dark_back}.
+$$
+R_{\text{обр}} = \frac{d U_{\text{обр}}}{d I_{\text{обр}}} = \frac{1}{a} = 
+$$
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{pics/dark_back.png}
+    \caption{Обратная ветвь темновой характеристики}
+    \label{fig:dark_back}
+\end{figure}
 
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{pics/ln.png}
+    \caption{График зависимости $\ln(I) = f(U)$ для прямой ветви темновой характеристики}
+    \label{fig:ln}
+\end{figure}
+
+
+Для прямой ветви построим график зависимости $ln(I)$ от $U$(смотрите рисунок \ref{fig:ln}).
+Коэффициент наклона линейного участка зависимости позволяет найти параметры $A$ и $I_{s}$.
+
+$$
+I_{s} = e^{b} \sim \text{ мА}
+$$
+
+$$
+A = \frac{1}{0.025 a} \sim 
+$$
 
 \subsection*{\textcolor{sub_header}{Световые характеристики}}
 
@@ -173,7 +214,7 @@ $$
 \end{equation}
 
 \begin{equation}
-    A = \frac{1}{0.025 a} \sim 20\frac{1}{\text{мА}}
+    A = \frac{1}{0.025 a} \sim 20
 \end{equation}
 
 
