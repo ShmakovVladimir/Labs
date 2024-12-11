@@ -802,4 +802,106 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
-* \footskip=
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \th on input line 34.
+\c@lstlisting=\count329
+<pics/diode.png, id=41, 356.33125pt x 609.27625pt>
+File: pics/diode.png Graphic file (type png)
+<use pics/diode.png>
+Package pdftex.def Info: pics/diode.png  used on input line 52.
+(pdftex.def)             Requested size: 151.0539pt x 258.27425pt.
+
+LaTeX Font Warning: Font shape `T2A/cmr/m/n' in size <30.45377> not available
+(Font)              size <29.86> substituted on input line 58.
+
+Package lettrine.sty Info: Targeted height = 20.76965pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 20.3919pt (\textcolor {defenition}{П});
+(lettrine.sty)             reported on input line 58.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./pics/diode.png (PNG copy)>]
+<pics/setup.png, id=55, 297.11pt x 334.24875pt>
+File: pics/setup.png Graphic file (type png)
+<use pics/setup.png>
+Package pdftex.def Info: pics/setup.png  used on input line 69.
+(pdftex.def)             Requested size: 176.23082pt x 198.26588pt.
+ [2 <./pics/setup.png (PNG copy)>]
+<pics/dark_straight.png, id=61, 746.5491pt x 347.6187pt>
+File: pics/dark_straight.png Graphic file (type png)
+<use pics/dark_straight.png>
+Package pdftex.def Info: pics/dark_straight.png  used on input line 98.
+(pdftex.def)             Requested size: 402.80783pt x 187.56277pt.
+ [3 <./pics/dark_straight.png>]
+<pics/dark_back.png, id=70, 743.6583pt x 366.77025pt>
+File: pics/dark_back.png Graphic file (type png)
+<use pics/dark_back.png>
+Package pdftex.def Info: pics/dark_back.png  used on input line 115.
+(pdftex.def)             Requested size: 402.80783pt x 198.663pt.
+<pics/ln.png, id=71, 729.927pt x 354.48434pt>
+File: pics/ln.png Graphic file (type png)
+<use pics/ln.png>
+Package pdftex.def Info: pics/ln.png  used on input line 123.
+(pdftex.def)             Requested size: 402.80783pt x 195.62148pt.
+ [4 <./pics/dark_back.png> <./pics/ln.png>]
+<pics/no_filter.png, id=77, 746.91045pt x 360.6273pt>
+File: pics/no_filter.png Graphic file (type png)
+<use pics/no_filter.png>
+Package pdftex.def Info: pics/no_filter.png  used on input line 158.
+(pdftex.def)             Requested size: 453.154pt x 218.79375pt.
+ [5 <./pics/no_filter.png>]
+<pics/red_filter.png, id=84, 746.91045pt x 360.26595pt>
+File: pics/red_filter.png Graphic file (type png)
+<use pics/red_filter.png>
+Package pdftex.def Info: pics/red_filter.png  used on input line 210.
+(pdftex.def)             Requested size: 352.45396pt x 170.00116pt.
+<pics/black_filter.png, id=85, 740.40614pt x 360.26595pt>
+File: pics/black_filter.png Graphic file (type png)
+<use pics/black_filter.png>
+Package pdftex.def Info: pics/black_filter.png  used on input line 211.
+(pdftex.def)             Requested size: 352.45396pt x 171.50189pt.
+<pics/line.png, id=86, 415.5525pt x 382.66965pt>
+File: pics/line.png Graphic file (type png)
+<use pics/line.png>
+Package pdftex.def Info: pics/line.png  used on input line 230.
+(pdftex.def)             Requested size: 302.10779pt x 278.21373pt.
+ [6 <./pics/red_filter.png> <./pics/black_filter.png>] [7 <./pics/line.png>] (./main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.59377pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22462 strings out of 475550
+ 477432 string characters out of 5785873
+ 1934187 words of memory out of 5000000
+ 44190 multiletter control sequences out of 15000+600000
+ 571236 words of font info for 64 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
+ 101i,7n,107p,2181b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2986.pfb>
+Output written on main.pdf (7 pages, 1105562 bytes).
+PDF statistics:
+ 164 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+
