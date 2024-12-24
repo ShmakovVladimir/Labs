@@ -1,0 +1,4 @@
+#!/bin/bash
+template_path="/home/vladimir/BOTAY!/Labs/jupyter_template/template.ipynb"
+now_path="$(pwd)/$1"
+cp "$template_path" "$now_path"
