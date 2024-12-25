@@ -6,6 +6,10 @@ xtick.labelsize: 10
 ytick.labelsize: 10
 legend.fontsize: 12
 
+font.family: serif
+mathtext.fontset: cm
+mathtext.rm: serif
+font.serif: DejaVu Serif
 
 axes.prop_cycle: cycler('color', ['2b9eb3', 'fcab10', '44af69', 'f8333c','9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
 grid.linestyle: --
