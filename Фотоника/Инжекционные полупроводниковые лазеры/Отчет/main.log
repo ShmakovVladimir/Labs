@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.23)  24 MAR 2025 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.23)  25 MAR 2025 03:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -828,11 +828,41 @@ Package lettrine.sty Info: Targeted height = 20.76965pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 20.3919pt (\textcolor {defenition}{П});
 (lettrine.sty)             reported on input line 37.
+<red_vc.png, id=41, 766.062pt x 377.9721pt>
+File: red_vc.png Graphic file (type png)
+<use red_vc.png>
+Package pdftex.def Info: red_vc.png  used on input line 54.
+(pdftex.def)             Requested size: 427.98476pt x 211.1727pt.
+<lazer.png, id=43, 747.63315pt x 384.83775pt>
+File: lazer.png Graphic file (type png)
+<use lazer.png>
+Package pdftex.def Info: lazer.png  used on input line 64.
+(pdftex.def)             Requested size: 427.98476pt x 220.29933pt.
+<green.png, id=44, 741.4902pt x 359.54324pt>
+File: green.png Graphic file (type png)
+<use green.png>
+Package pdftex.def Info: green.png  used on input line 74.
+(pdftex.def)             Requested size: 427.98476pt x 207.53125pt.
 
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] (./main.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <./red_vc.png>]
+<red.png, id=57, 747.9945pt x 359.54324pt>
+File: red.png Graphic file (type png)
+<use red.png>
+Package pdftex.def Info: red.png  used on input line 82.
+(pdftex.def)             Requested size: 427.98476pt x 205.72629pt.
+<blue.png, id=58, 728.12025pt x 359.54324pt>
+File: blue.png Graphic file (type png)
+<use blue.png>
+Package pdftex.def Info: blue.png  used on input line 90.
+(pdftex.def)             Requested size: 427.98476pt x 211.34415pt.
+
+
+[2 <./lazer.png> <./green.png>]
+
+[3 <./red.png> <./blue.png>] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -844,18 +874,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 22392 strings out of 474131
- 476872 string characters out of 5749018
- 891172 words of memory out of 5000000
- 45172 multiletter control sequences out of 15000+600000
+ 22434 strings out of 474131
+ 477522 string characters out of 5749018
+ 892281 words of memory out of 5000000
+ 45214 multiletter control sequences out of 15000+600000
  566949 words of font info for 50 fonts, out of 8000000 for 9000
  680 hyphenation exceptions out of 8191
  116i,6n,121p,566b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2986.pfb>
-Output written on main.pdf (1 page, 63891 bytes).
+Output written on main.pdf (3 pages, 1032541 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
